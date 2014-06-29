@@ -1,0 +1,6 @@
+employing organisation: There was a person available to whom computer users could turn to for help"	0	0
+employing organisation: A central support was available to help with computer problems"	0	0
+employing organisation: Training courses were readily available for us to improve our computing abilities"	0	0
+employing organisation: Management provided most of the necessary help and resources for computing"	0	0
+employing organisation: Management was really keen to see that we were satisfied with use of our computers"	0	0
+

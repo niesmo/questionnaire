@@ -1,0 +1,155 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.hide{
+    display:none;
+}
+.bold{
+    font-weight:bold;
+}
+
+.no-top-margin{
+    margin-top:0px;
+}
+
+.top-padding-sm{
+    padding-top:5px;
+}
+
+.top-margin-sm{
+    margin-top:5px;
+}
+
+.bottom-padding-sm{
+    padding-bottom:5px;
+}
+.bottom-margin-sm{
+    margin-bottom:10px;
+}
+
+.right-margin-sm{
+    margin-right:10px;
+}
+
+.left-margin-sm{
+    margin-left:5px;
+}
+
+.user-name{
+    color:white;
+    padding-top:10px;
+    padding-right:10px;
+}
+
+.user-name a{
+    color:lightblue;
+    font-weight:bold;
+}
+
+.error-box li{
+    color:black;
+    font-weight:bold;
+}
+
+.search-stats{
+    margin-top: -20px;
+    color: #808080;
+}
+
+.trash-can{
+    color:black;
+}
+
+#txt-sim-holder{
+    margin-top:100px;
+}
+
+#similarity{
+    font-size:100pt;
+}
+
+.notification-badge{
+    color:white;
+    background-color:#f3401b;
+}
+
+.notification-badge:hover {
+    cursor: pointer;
+}
+
+#notification-list{
+    position:absolute;
+    width:320px;
+    color:black;
+    background-color:white;
+    border:1px solid gray;
+}
+
+.notification-item-left{
+    width:200px;
+    float:left;
+}
+
+.notification-item-right{
+    width:100px;
+    float:right;
+    text-align:right;
+    padding-top:7px;
+}
+
+
+
+#notification-list p {
+    padding:5px;
+    border-bottom:1px solid gray;
+    margin-bottom: 2px;
+    font-weight:bold;
+}
+
+#notification-list ul {
+    list-style-type:none;
+    margin:0;
+    padding:5px;
+    padding-bottom:0px;
+    padding-top:0px;
+}
+
+#notification-list ul li{
+    padding-top:5px;
+    padding-bottom:0px;
+}
+
+
+#notification-list ul li p {
+    padding:0;
+    margin:0;
+    border:none;
+    font-weight:normal;
+
+}
+
+
+#notification-list:before {
+    content: '';
+    height: 10px;
+    width: 10px;
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 215px;
+    border: 5px solid white;
+    border-color: transparent transparent white transparent;
+}
+
+#notification-list .separator{
+    clear:both;
+    margin-top:5px;
+    margin-bottom:0px;
+}
+
+.grey{
+    color:darkgray;
+}

@@ -1,0 +1,114 @@
+code_name	code_id	parent_id
+Physical Features of the Program	1	0
+Personal Interactions with the Program	2	0
+Task Performance	3	0
+Role of Program in Organization	4	0
+Personal Characteristics	5	0
+Intention for Use	6	0
+Visuals	7	1
+Logical Aspects	8	1
+User Assistance	9	1
+Program Content or Output	10	1
+System Reliability	11	1
+Speed	12	1
+Noise	13	1
+Medium	14	1
+Features	15	1
+Compatibility	16	2
+Implementation	17	2
+Perceived Personal Benefit	18	2
+Ease of Use	19	2
+General Opinion	20	2
+User Control	21	2
+Task orientation (patient)	22	3
+Task orientation (practitioner)	23	3
+Impact on Work Output	24	3
+Convenience	25	3
+Organizational Goals	26	4
+Management Expectations	27	4
+Requirements for Use	28	4
+Voluntariness	29	4
+Organization Professional Image	30	4
+Perceived Costs	31	4
+Attachment to Organization	32	4
+Technology Acceptance	33	5
+General Opinion	34	5
+Attitude Toward Change	35	5
+Loyalty	36	6
+Familiarity	37	6
+Size	38	7
+Colors	39	7
+Layout	40	8
+Consistency	41	8
+Intuitive Use	42	8
+Number of Steps	43	8
+Help Menu	44	9
+Manuals	45	9
+External Help Processes	46	9
+Error Messages	47	9
+Error Recovery	48	9
+Prompts and Interaction	49	9
+Up to Date Content	50	10
+Accurate Content	51	10
+Expected Content	52	10
+Level of Detail	53	10
+Trusted	54	10
+Relevant Content	55	10
+Format Output	56	10
+Clarity	57	10
+Compatible Mental Models	58	16
+Style Compatibility	59	16
+Job Compatibility	60	16
+Task Compatibility	61	16
+Flexibility	62	16
+System Compatibility	63	16
+Learning	64	17
+Retention	65	17
+Adaptation to Skill Level	66	17
+Computer Skills	67	18
+Compatibility with Education	68	18
+Professional image	69	18
+Expression of Benefit	70	18
+Total Benefit	71	20
+General Opinion	72	20
+Efficiency	73	20
+Scales	74	20
+Absorption in Activity	75	20
+Customizing	76	21
+Value of Use	77	22
+Accessibility	78	22
+Sample Tasks	79	23
+Task Compatibility	80	23
+Speed of Tasks	81	23
+Quality Care	82	23
+Time on Patient	83	23
+Communication Impacts	84	23
+Quantity Output	85	24
+Quality Output	86	24
+General Efficiency	87	24
+Easier Work	88	24
+Feeling of Control	89	24
+Location Convenience	90	25
+Timing Convenience	91	25
+Organization Time Cost	92	31
+Subjective Norms	93	33
+Anxiety	94	33
+Past Experience	95	33
+Perceived Competence	96	33
+Phrase Consistency	97	41
+Layout Consistency	98	41
+Input Consistency	99	41
+Intuitive Wording	100	42
+Intuitive Formatting	101	42
+Intuitive Input	102	42
+Error Frequency	103	48
+Observation	104	64
+Tutorials	105	64
+Training	106	64
+Memory Loading	107	65
+Command Memory	108	65
+Speed	109	78
+Safety	110	82
+Legality	111	94
+Privacy	112	94
+Job Security	113	94
