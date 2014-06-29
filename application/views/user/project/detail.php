@@ -71,6 +71,18 @@
                     </div><!-- /input-group -->
                 </div>
             </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-12">
+                    <?php
+                    echo heading("Danger Zone", 3);
+                    ?>
+                    <p>Delete this project.</p>
+                    <p>Once you delete a project, there is no going back. Please be certain.</p>
+                    <button class="btn btn-danger remove-project-item" data-project-id='<?php echo $project->get_id();?>'>Delete Project <i class="fa fa-trash-o"></i></button>
+                    <!-- //<a href='#' class='pull-right hidden remove-project-item trash-can' data-project-id='{$project->get_id()}'><i class='fa fa-trash-o '></i></a> -->
+                </div>
+            </div>
         </div>
     </div>
 </div>

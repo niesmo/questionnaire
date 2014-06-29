@@ -21,9 +21,39 @@ foreach($projects as $project){
             echo heading("User Dashboard" ,2);
         ?>
             <div class="row">
-                <div class="col-md-9">
+                <div class="col-md-6">
+                    <?php
+                    echo heading("Current Projects", 3, "class='no-top-margin'");
+                    echo "<ul class='list-unstyled' id='project-list'>";
+                    if(!empty($projects)){
+                        foreach($projects as $project){
+                            $class="";
+                            /*if($project->get_id() == $defaultProject_id){
+                                $class="bold";
+                            }
+                            else{
+                                $class="";
+                            }*/
+                            echo "<li class='{$class} has-remove-icon' data-project-id='{$project->get_id()}'>".anchor("user/project/detail/{$project->get_id()}", $project->get_name()). "</li>";
+                        }
+                    }
+                    else{
+                        echo "<p id='no-project'>You have not created any project yet</p>";
+                    }
+                    echo "</ul>";
+                    ?>
                     <div class="row">
-                        <div class="col-md-7">
+                        <div class="col-md-12">
+                            <?php
+                            echo heading("Projects Summary", 3);
+                            echo "<p>I dont know what to put here yet . . . . :(</p>";
+                            ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-2">
                             <div class="input-group"> 
                                 <?php
                                 $inputArr = array("class"=>"form-control", "placeholder"=>"Project Name", "id"=>"project-name");
@@ -46,36 +76,6 @@ foreach($projects as $project){
                             ?>
                         </div>
                     </div>-->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <?php
-                            echo heading("Projects Summary", 3);
-                            echo "<p>I dont know what to put here yet . . . . :(</p>";
-                            ?>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 well">
-                    <?php
-                        echo heading("Current Projects", 3, "class='no-top-margin'");
-                        echo "<ul class='list-unstyled' id='project-list'>";
-                        if(!empty($projects)){
-                            foreach($projects as $project){
-                                if($project->get_id() == $defaultProject_id){
-                                    $class="bold";
-                                }
-                                else{
-                                    $class="";
-                                }
-                                echo "<li class='{$class} has-remove-icon' data-project-id='{$project->get_id()}'>".anchor("user/project/detail/{$project->get_id()}", $project->get_name()). "<a href='#' class='pull-right hidden remove-project-item trash-can' data-project-id='{$project->get_id()}'><i class='fa fa-trash-o '></i></a></li>";
-                            }
-                        }
-                        else{
-                            echo "<p id='no-project'>You have not created any project yet</p>";
-                        }
-                        echo "</ul>";
-                    ?>
-                    
                 </div>
             </div>
         </div>

@@ -3,7 +3,6 @@ body {
   padding-top: 50px;
   padding-bottom: 20px;
 }
-
 .hide{
     display:none;
 }
@@ -152,4 +151,11 @@ body {
 
 .grey{
     color:darkgray;
+}
+
+#front-page-logo{
+    font-size: 150px;
+}
+.search-btn-width{
+    width: 65px;
 }

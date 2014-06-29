@@ -142,7 +142,9 @@ function prep_for_remove_project(project_id) {
             data = trim(data);
             if (data == "SUCCESS") {
                 //remove the li from the list
-                $("#project-list li[data-project-id=" + project_id + "]").fadeOut(300, function () { $(this).remove(); });
+                //$("#project-list li[data-project-id=" + project_id + "]").fadeOut(300, function () { $(this).remove(); });
+                console.log("Item was deleted");
+                window.location = base_url + "/user/dashboard";
             }
             else {
                 alert("Something went wrong! Please refresh and try again.");
@@ -457,7 +459,8 @@ $(document).ready(function () {
 
     $(".remove-project-item").click(function () {
         var project_id = $(this).attr("data-project-id");
-        prep_for_remove_project(project_id);        
+        prep_for_remove_project(project_id);
+
     });
 
     $(".remove-questionnaire-item").click(function () {
@@ -643,14 +646,17 @@ $(document).ready(function () {
                     $("#no-project").remove();
 
                     //adding the new text to the current project list
-                    $("#project-list").append("<li class='has-remove-icon' data-project-id='" + project_id + "'><a href='" + base_url + "/user/project/detail/" + project_id + "'>" + projectName + "</a><a href='#' class='pull-right remove-project-item hidden trash-can' data-project-id='" + project_id + "'><i class='fa fa-trash-o'></i></a></li>");
-                    bind_trash_icon(".has-remove-icon");
+                    $("#project-list").append("<li class='has-remove-icon' data-project-id='" + project_id + "'><a href='" + base_url + "/user/project/detail/" + project_id + "'>" + projectName + "</li>");
+
+                    //</a><a href='#' class='pull-right remove-project-item hidden trash-can' data-project-id='" + project_id + "'><i class='fa fa-trash-o'></i></a>
+                    /*bind_trash_icon(".has-remove-icon");
                     $(".remove-project-item").on("click", function () {
                         var project_id = $(this).attr("data-project-id");
                         prep_for_remove_project(project_id);
                     });
                     
                     $("#default-project-list").append("<option value='" + project_id + "'>" + projectName + "</option>");
+                     */
                     $("#project-name").val("");
                 }
                 else {

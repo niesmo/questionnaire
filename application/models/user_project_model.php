@@ -49,7 +49,7 @@ class User_project_model extends CI_Model {
             "permission"=>"WRITE"
         );
         
-        echo "INSERT  : ". $this->db->insert("user_project", $insertArr);
+        $this->db->insert("user_project", $insertArr);
         
         $insertArr['user_project_id'] = $this->db->insert_id();
         $this->set_array($insertArr);
