@@ -33,10 +33,13 @@ class Project extends User_Controller{
         
         $questionnaires = $project->get_questionnaire();
         $collaborators = $project->get_collaborators();
+        $allProjects = $project->get_all_my_projects();
+
         
         $data['project'] = $project;
         $data['questionnaires'] = $questionnaires;
         $data['collaborators'] = $collaborators;
+        $data['allProjects'] = $allProjects;
         
         
         

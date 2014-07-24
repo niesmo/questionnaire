@@ -15,7 +15,7 @@
                 <dd id="c_content"><?=$question->get_content()?></dd>
                 <dt>Created By</dt>
                 <dd><?=$question->get_user_name()?></dd>
-                <dt>Creation Date</dt>
+                <dt>Added Date</dt>
                 <dd><?=date_format( $date, 'l jS \of F Y h:i:s A' )?></dd>
                 <dt>Questionnaire</dt>
                 <dd><?=$question->get_questionnaire_name()?></dd>

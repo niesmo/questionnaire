@@ -50,10 +50,10 @@ class Login extends CI_Controller {
             try{
                 $user->login();
                 $uri = urldecode($this->input->server('QUERY_STRING'));
-                $uri = str_replace("location=", "", $uri);
+                $uri = str_replace("location=/questionnaire", "", $uri);
                 
-                //This line is added for using the locahost 
-                $uri = str_replace("/questionnaire", "" , $uri);
+                //This line is added for using the localhost
+                //$uri = str_replace("/questionnaire", "" , $uri);
                 
                 $uri = str_replace("/index.php", "", $uri);
                 redirect($uri, 'refresh');

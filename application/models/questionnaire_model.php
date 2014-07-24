@@ -62,16 +62,31 @@ class Questionnaire_model extends CI_Model{
     
     public function get_all_questionnaires(){
         $questionnaires = array();
+        $this->db->order_by("year", "DESC");
         $query = $this->db->get("questionnaire");
         $questionnaires = $this->to_questionnaire_obj($query->result());
         return $questionnaires;
     }
     
-    public function search($searchTerm){
-        $this->db->like("name", $searchTerm);
-        $this->db->or_like("year", $searchTerm);
-        $this->db->or_like("author", $searchTerm);
+    public function search($searchTerm, $field="all", $searchYear=NULL){
 
+        $whereClause = "(`author` LIKE '%". $this->db->escape_like_str($searchTerm) ."%'";
+
+        //$this->db->like("author", $searchTerm);
+        if(strtolower($field) == "all"){
+            $whereClause .= " OR `name` LIKE '%". $this->db->escape_like_str($searchTerm) ."%'";
+            //$this->db->or_like("name", $searchTerm);
+        }
+        $whereClause .= " )";
+
+
+        if($searchYear != NULL && $searchYear != -1){
+            $whereClause .= " AND (`year` = ".$this->db->escape_str($searchYear).")";
+            //$this->db->where("(`year` = {$searchYear})");
+        }
+
+        $this->db->where($whereClause);
+        $this->db->order_by("year", "DESC");
         $query = $this->db->get("questionnaire");
         $questionnaires = $this->to_questionnaire_obj($query->result());
         return $questionnaires;
@@ -79,13 +94,66 @@ class Questionnaire_model extends CI_Model{
     
     public function qsearch($searchTerm){
         $this->setup_join_questionnaire_question();
-        $this->db->like("content" , $searchTerm);
-        $this->db->or_like("concept" , $searchTerm);
+        $this->db->where("( `content` LIKE '%{$searchTerm}%' OR `concept` LIKE '%{$searchTerm}%' )");
+
+        /*$this->db->like("content" , $searchTerm);
+        $this->db->or_like("concept" , $searchTerm);*/
 
         $query = $this->db->get();
         
         $questions = $this->result_to_question_objects($query->result());
         return $questions;
+    }
+
+    public function advance_search($searches){
+        $whereClause = "";
+        if(isset($searches['filter'])){
+            /*if(isset($searches['filter']['year']) && $searches['filter']['year'] == -1){
+                unset($searches['filter']['year']);
+            }*/
+
+            foreach($searches['filter'] as $filter=>$value){
+                if($filter == "year"){
+                    if($value != -1)
+                        $whereClause .= "`".$filter."` = ".$value . " AND ";
+                }
+                else{
+                    $whereClause .= "`".$filter."` = '".$value."' AND ";
+                }
+            }
+
+            $whereClause = rtrim($whereClause, "AND ") ;
+            if(strlen($whereClause) > 0)
+                $whereClause = "(" . $whereClause . ")";
+        }
+        if(isset($searches['search'])){
+            $whereClause .= " AND (";
+            foreach($searches['search'] as $search=>$value){
+                if($search == "year"){
+                    if($value != -1)
+                        $whereClause .= "`".$search."` = ".$value . " OR ";
+                }
+                else{
+                    $whereClause .= "`".$search."` LIKE '%".$value."%' OR ";
+                }
+            }
+            $whereClause = trim(rtrim($whereClause,"OR "), "AND "). ")";
+        }
+        $this->db->where($whereClause);
+        if(isset($searches['search']['author'])){
+            $this->db->group_by("author");
+        }
+        $this->db->order_by("year", "DESC");
+        $this->db->limit(4);
+        $query = $this->db->get("questionnaire");
+        if($query->num_rows() == 0)
+            return array();
+
+        $results = array();
+        foreach($query->result() as $questionnaire){
+            $results[] = new Questionnaire_model($questionnaire);
+        }
+        return $results;
     }
     
     public function update($status = "ORIGINAL"){
@@ -111,18 +179,26 @@ class Questionnaire_model extends CI_Model{
             return $this->db->insert_id();
         return $result;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+    public function get_distinct_years(){
+        $years = array();
+        $this->db->select("year");
+        $this->db->distinct();
+        $this->db->order_by("year", "DESC");
+        $this->db->where("year IS NOT NULL");
+        $query = $this->db->get("questionnaire");
+        if($query->num_rows() == 0){
+            return $years;
+        }
+
+        foreach($query->result() as $year){
+            $years[] = $year->year;
+        }
+        return $years;
+    }
+
+
+
     private function setup_join_questionnaire_question(){
         $this->db->select("q.*");
         $this->db->from("questionnaire as qn");
@@ -138,7 +214,6 @@ class Questionnaire_model extends CI_Model{
         $questions = $this->result_to_question_objects($query->result());
         return $questions;
     }
-    
     
     private function result_to_question_objects($queryResult){
         $questions = array();

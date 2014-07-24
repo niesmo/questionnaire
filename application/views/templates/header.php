@@ -16,9 +16,14 @@ if(!isset($projectName) || $projectName == "") $projectName = "iUSuR";
 		</div>
 		<div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><?=anchor("questionnaire","Questionnaires");?></li>
+                <?php
+                if(is_logged_in()){
+                    echo "<li>".anchor("user/dashboard","<i class='fa fa-user'></i> Dashboard") ."</li>";
+                }
+                ?>
+                <!--<li><?php //echo anchor("questionnaire","Questionnaires");?></li>-->
             </ul>
-            <div class="navbar-form navbar-right"> 
+            <div class="navbar-form navbar-right">
                 <div class="form-group">
                     <?php
                     if(is_logged_in()){

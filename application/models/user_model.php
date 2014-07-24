@@ -60,6 +60,8 @@ class User_model extends CI_Model {
         $this->session->unset_userdata('email');
         $this->session->unset_userdata('logged_in');
         $this->session->unset_userdata('is_admin');
+        $this->session->unset_userdata("project_id");
+        $this->session->unset_userdata("user_qn_id");
         return true;
     }
     
@@ -80,7 +82,7 @@ class User_model extends CI_Model {
     }
     
     public function get_username(){
-        if(!isset($this->fistName) || $this->firstName == NULL){
+        if(!isset($this->firstName) || $this->firstName == NULL){
             $this->set_user();
         }
         return $this->firstName . " " . $this->lastName;
@@ -187,7 +189,7 @@ class User_model extends CI_Model {
         
         //create the user_project entry in the DB
         $insertArr = array(
-            "user_id"=>$this->user_id,
+            "user_id"=>$request->user_id,
             "project_id"=>$request->project_id
         );
         return $this->db->insert("user_project", $insertArr);

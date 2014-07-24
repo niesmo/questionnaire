@@ -53,7 +53,7 @@
                 
                 
                 if($quickAdd == TRUE){
-                    echo '<button id="quick-add" class="btn btn-warning btn-sm left-margin-sm" data-toggle="tooltip" data-placement="right" title="'.$project_name . "->" .$qn_name.'" data-original-questionnaire="'.$questionnaire->get_id().'" data-question-id="'.$question->get_id().'" data-project-id="'.$project_id.'" data-questionnaire-id="'.$user_qn_id.'">Quick Add</button>';                    
+                    echo '<button id="quick-add" class="btn btn-warning btn-sm left-margin-sm" data-toggle="tooltip" data-placement="right" title="'.$project_name . "->" .$qn_name.'" data-original-questionnaire="'.$questionnaire->get_id().'" data-question-id="'.$question->get_id().'" data-project-id="'.$project_id.'" data-questionnaire-id="'.$user_qn_id.'">Quick Add</button>';
                 }
 
             }

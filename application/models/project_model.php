@@ -118,8 +118,26 @@ class Project_model extends CI_Model{
         foreach($query->result() as $user){
             $users[] = new $CI->MUser($user);
         }
-        
         return $users;
+    }
+
+    public function get_all_my_projects(){
+        $this->db->select("*");
+        $this->db->from("project as p");
+        $this->db->join("user_project as up", "up.project_id = p.project_id");
+        $this->db->where("up.user_id", $this->session->userdata("user_id"));
+        $query = $this->db->get();
+
+        //checking if the array is empty
+        if($query->num_rows() == 0)
+            return array();
+
+        $results = array();
+        foreach($query->result() as $pr){
+            $results[] = new Project_model($pr);
+        }
+        return $results;
+
     }
     
     

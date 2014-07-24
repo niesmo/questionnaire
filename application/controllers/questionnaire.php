@@ -18,20 +18,23 @@ class Questionnaire extends CI_Controller {
 		$this->load->view('templates/footer.php');
 	}
     
-    public function search($searchTerm = ""){
+    public function search($searchTerm = "",$field="all" ,$searchYear=NULL){
         if($searchTerm == "")
             redirect("questionnaire", "refresh");
-        
-        
+
         $searchTerm = rawurldecode ($searchTerm);
         $data = array();
+        $years = $this->Questionnaire_model->get_distinct_years();
         
         $this->benchmark->mark('questionnaire_start');
-        $data['questionnares'] = $this->Questionnaire_model->search($searchTerm);
+        $data['questionnares'] = $this->Questionnaire_model->search($searchTerm,$field, $searchYear);
         $this->benchmark->mark('questionnaire_end');
         
         $data['elapsedSearchTime'] = $this->benchmark->elapsed_time('questionnaire_start', 'questionnaire_end');
         $data['searchTerm'] = $searchTerm;
+        $data['searchYear'] = $searchYear;
+        $data['years'] = $years;
+        $data['field'] = $field;
         
         $this->load->view('templates/head.php', array('title'=>"Search for '{$searchTerm}' in Questionnaires"));
 		$this->load->view('templates/header.php');

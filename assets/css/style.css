@@ -159,3 +159,49 @@ body {
 .search-btn-width{
     width: 65px;
 }
+
+.questionnaire-item .detail{
+    line-height: 8px;
+    color: gray;
+    margin-top: -10px;
+    font-size: small;
+}
+
+.questionnaire-item:first-child h3{
+    margin-top:0;
+}
+.questionnaire-item h3{
+    font-size: 20px;
+}
+
+
+.questionnaire-item .detail dl dt{
+    width: auto;
+    font-weight: normal;
+}
+.questionnaire-item .detail dl dd{
+    margin-left: 70px;
+}
+
+#search-suggestions{
+    /*min-width: 360px;*/
+    position: absolute;
+    background-color: rgb(224, 224, 224);
+    z-index: 2;
+    margin-right: 15px;
+    padding: 10px;
+    border: solid 1px silver;
+    border-top: none;
+}
+
+#search-suggestions .title p{
+    font-size: 11px;
+    color: gray;
+    margin-bottom: 0px;
+    border-bottom: 1px solid lightgray;
+}
+
+#search-suggestions .item:hover{
+    background-color:#d3d3d3;
+    cursor: pointer;
+}

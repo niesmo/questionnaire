@@ -25,10 +25,28 @@ $qs_each_col = ceil($totalCountQuestionnairs/3);
             echo "<hr />";
             ?>
             <div class="row">
+                <!-- The result should be like google results -->
+
+                <div class="col-md-7">
+                    <?php
+                    foreach($questionnares as $questionnaire){
+                        echo "<div class='questionnaire-item'>";
+                            echo heading(anchor("questionnaire/detail/".$questionnaire->get_id(),$questionnaire->get_name()),3);
+                            echo "<div class='detail'>";
+                                echo "<dl class='dl-horizontal'>";
+                                    echo "<dt>Author</dt>";
+                                    echo "<dd>".$questionnaire->get_author()."</dd>";
+                                    echo "<dt>Year</dt>";
+                                    echo "<dd>".$questionnaire->get_year()."</dd>";
+                                echo "</dl>";
+                            echo "</div>";
+                        echo "</div>";
+                    }
+                    ?>
+                </div>
                 <!-- I want to have the list of questionnaires in a 3 column list -->
                 <?php
-                    
-                    for($i=0; $i<3; $i++){
+                    /*for($i=0; $i<3; $i++){
                         echo "<div class='col-md-4'><ul class='list-unstyled'>";
                         for($j=0; $j<$qs_each_col; $j++){
                             if (($i*$qs_each_col)+$j >= $totalCountQuestionnairs)
@@ -38,7 +56,7 @@ $qs_each_col = ceil($totalCountQuestionnairs/3);
                             echo "<li class='bottom-padding-sm'>".anchor("questionnaire/detail/".$q_id,$phrase)."</li>\n";
                         }
                         echo "</ul></div>";
-                    }
+                    }*/
                 ?>
             </div>
         </div>

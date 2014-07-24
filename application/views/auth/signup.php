@@ -49,7 +49,7 @@ echo form_open($baseUrl."/index.php/auth/login/".$formAction, $attributes);
 </div>
 <span class="help-block" id="signin-error-placeholder"></span>
 <?php
-$attributes = array("class"=>"btn btn-success", "value"=>"Sign Un");
+$attributes = array("class"=>"btn btn-success", "value"=>"Sign Up");
 echo form_submit($attributes);
 ?>
 <?php echo form_close();?>

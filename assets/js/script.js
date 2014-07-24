@@ -1,4 +1,5 @@
 var base_url = "http://localhost/questionnaire/index.php";
+var requestInProgres = false;
 
 
 function filter_other_questions_list(data, type) {
@@ -322,12 +323,177 @@ function decline_collaboration(request_id) {
     });
 }
 
+function suggest_search(search){
+    $.ajax({
+        url:base_url+"/ajax/suggest_search",
+        type:"POST",
+        data:{
+            "search":search.search,
+            "filter":search.filter
+        },
+        success:function(data){
+            data = trim(data);
+            var resQn = new Array();
+            if(data!=""){
+                var questionnaires = $(data);
+                questionnaires.find("questionnaire").each(function (index) {
+                    var parsedQn = {
+                        "id":$(this).attr("id"),
+                        "name":$(this).find("name").text(),
+                        "author":$(this).find("author").text(),
+                        "year":$(this).find("year").text()
+                    };
+                    resQn.push(parsedQn);
+                });
+                if(search.search.name != undefined){
+                    populate_search_suggestion(resQn,"questionnaire", "Questionnaire");
+                }
+                else if(search.search.author != undefined){
+                    populate_search_suggestion(resQn,"author", "Author");
+                }
+            }
+            else{
+                if(search.search.name != undefined){
+                    wipe_search_suggestion("questionnaire");
+                }
+                else if(search.search.author != undefined){
+                    wipe_search_suggestion("author");
+                }
+            }
+        },
+        error:function(data){
+            console.log(data.responseText);
+            console.log("SOMETHING WENT WRONG IN THE AJAX CALL FOR SUGGESTING SEARCH TERMS");
+        }
+    })
+}
+
+function wipe_search_suggestion(id){
+    $("#"+id).empty();
+    if($("#author").is(":empty") && $("#questionnaire").is(":empty")){
+        $("#search-suggestions").addClass("hide");
+    }
+}
+
+function populate_search_suggestion(result, id, catName){
+    if(result.length == 0){
+        $("#"+id).empty();
+        return;
+    }
+    //$("#search-suggestions").width($("#search-box").width());
+    var itemsHtml = "<div class='title'><p>"+catName+"</p></div>";
+    for(var i =0;i<result.length;i++){
+        itemsHtml += "<div data-id='"+result[i].id+"' class='item'>"+
+            "<p>"+(id=="author"?result[i].author:result[i].name)+"</p>"
+            +"</div>";
+    }
+    $("#"+id).empty();
+    $("#"+id).append(itemsHtml);
+
+    $("#search-suggestions").removeClass("hide");
+}
+
+$( document ).ajaxStart(function() {
+    requestInProgres = true;
+});
+
+$( document ).ajaxComplete(function(){
+    requestInProgres = false;
+});
+
+$(document).on('click', '#questionnaire .item', function(){
+    var id = $(this).data("id");
+    window.location = base_url + "/questionnaire/detail/"+id;
+});
+
+$(document).on('click', '#author .item', function(){
+    var id = $(this).data("id");
+    var author = $(this).text();
+    var year = $("select[name=year]").val();
+    var url = window.location;
+    window.location = base_url + "/questionnaire/search/"+author+"/author/"+year;
+});
+
+$(document).on( 'click', function ( e ) {
+    if ( $( e.target ).closest( "#search-suggestions" ).length === 0 ) {
+        $("#search-suggestions").addClass("hide");
+    }
+});
 
 $(document).ready(function () {
     
     $('form').validator();
     $('#quick-add').tooltip();
     $('.question-history-item').tooltip();
+
+    $(".add-selected-question").click(function(){
+        var checkboxes = $('.q_checkbox:checked');
+        if(checkboxes.length === 0){
+            return false;
+        }
+
+        var data = new Array(checkboxes.length);
+        for(var i=0;i<checkboxes.length;i++){
+            data[i] = checkboxes[i].getAttribute("name");
+        }
+        console.log(data);
+        //alert("This feature has not be completely implemented yet!")
+    });
+
+    $(".q_checkbox").change(function(){
+        var checkedLen = $('.q_checkbox:checked').length;
+        if(checkedLen === 0){
+            $(".add-selected-question").text("Add Selected Questions");
+            $(".add-selected-question").attr("disabled", true);
+
+        }
+        else{
+            $(".add-selected-question").text("("+checkedLen+") Add Selected Questions");
+            $(".add-selected-question").attr("disabled", false);
+        }
+    });
+
+    $(".item").on("click",function(){
+       alert($(this).data("id"));
+    });
+
+    $(".typeahead").keyup(function(e){
+        if(e.keyCode === 27){ //ESC
+            $("#search-suggestions").addClass("hide");
+            return;
+        }
+        var searchTerm = trim($(this).val());
+        var year = $("select[name=year]").val();
+        if(searchTerm == ""){
+            $("#search-suggestions").addClass("hide");
+            return;
+        }
+
+        var search = {
+            "search":{},
+            "filter":{
+                "year":year
+            }
+        };
+
+        if($(this).data("ta-questionnaire")){
+            search.search ={"name":searchTerm};
+            suggest_search(search);
+        }
+
+        var search = {
+            "search":{},
+            "filter":{
+                "year":year
+            }
+        };
+
+        if($(this).data("ta-author")){
+            search.search ={"author":searchTerm};
+            suggest_search(search);
+        }
+
+    });
 
     $(".notification-badge").click(function () {
         

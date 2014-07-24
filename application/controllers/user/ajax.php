@@ -8,7 +8,6 @@ class Ajax extends User_Controller{
         $this->output->enable_profiler(FALSE);
     }
 
-    
     public function create_project(){
         $projectName = $this->input->post("name");
         $newProject = $this->MProject->quick_create($projectName);
@@ -83,7 +82,6 @@ class Ajax extends User_Controller{
         }
     }
     
-    
     public function change_user_question(){
         $data = $this->input->post();
         if(!isset($data['question_id']) || !isset($data['content'])){
@@ -103,7 +101,6 @@ class Ajax extends User_Controller{
         echo "FAILED";
         
     }
-    
     
     public function create_questionnaire(){
         $data = $this->input->post();
@@ -159,8 +156,7 @@ class Ajax extends User_Controller{
             echo "EMPTY";
         }   
     }
-    
-    
+
     public function compare_content(){
         $this->config->load('dandelion_sim');
         $id = $this->config->item('id');
@@ -178,8 +174,7 @@ class Ajax extends User_Controller{
         $parsedData = json_decode($xml);
         echo $parsedData->similarity;
     }
-    
-    
+
     public function invite_collaborator(){
         $this->load->model("User_model" , "MUser");
         $email = $this->input->post("email");
@@ -263,5 +258,7 @@ class Ajax extends User_Controller{
             return;
         }
     }
+
+
 }?>
 

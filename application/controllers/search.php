@@ -6,8 +6,17 @@ class Search extends CI_Controller {
     }
     
     public function pre(){
-        $searchStr = rawurlencode(strtolower($this->input->post('search')));
-        redirect($this->input->post('path'). "/" .$searchStr , "refresh");
+        $data = $this->input->post();
+        $path = $data['path'];
+        unset($data['path']);
+        unset($data['search-btn']);
+
+        $queryStr = "";
+        foreach($data as $d){
+            $queryStr .= rawurlencode(strtolower(trim($d))) . "/";
+        }
+        $queryStr = rtrim($queryStr,"/");
+        redirect($path. "/" .$queryStr , "refresh");
     }
 }
 ?>

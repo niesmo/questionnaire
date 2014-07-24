@@ -13,6 +13,8 @@
                 <dt>Year</dt>
                 <dd><?php echo $questionnaire->get_year();?></dd>
             </dl>
+            <button class="btn btn-sm btn-success bottom-margin-sm">Add Entire Questionnaire</button>
+
             <?php
             $hiddenInput = array("path"=>"questionnaire/qsearch/{$qn_id}");
             echo form_open("search/pre","", $hiddenInput);
@@ -31,15 +33,48 @@
             echo form_close();
             echo "<hr />";
             ?>
+            <?php
+            if(is_logged_in()){
+                $dropdownProjectArr=array();
+                $dropdownProjectArr['-1'] = "Please select a project";
+                /*foreach($projects as $project){
+                    $dropdownProjectArr[$project->get_id()] = $project->get_name();
+                }*/
+
+                $modalData = array();
+                $modalData ['modal_id'] = "project-selection";
+                $modalData ['modalLabel'] = "Select Project";
+                $modalData ['modalTitle'] = "Select Project & Questionnaire";
+                $modalData ['dropdownProjectArr'] = $dropdownProjectArr;
+                $modalData ['q_id'] = 1;//$question->get_id();
+                $modalData ['qn_id'] = 1;//$questionnaire->get_id();
+
+                $this->load->view("modals/select_create_project.php", $modalData);
+                echo '<button class="btn btn-success btn-sm bottom-margin-sm add-selected-question" data-toggle="modal" data-target="#project-selection" disabled>Add Selected Questions</button>';
+            }
+            else{
+                echo anchor("auth/login?location=".urlencode($_SERVER['REQUEST_URI']), "Add Selected Questions", "class='btn btn-success btn-sm bottom-margin-sm add-selected-question'");
+            }
+            ?>
+
             <ul class="list-unstyled">
             <?php
             foreach($questions as $question){
                 $id= $question->get_id();
                 $content =$question->get_content();
-                echo "<li>".anchor("question/detail/{$qn_id}/{$id}/", $content)."</li>";
+                echo "<li>".form_checkbox($qn_id."_".$id,null,null,"class='q_checkbox'") ." ".anchor("question/detail/{$qn_id}/{$id}/", $content)."</li>";
             }
             ?>
             </ul>
+            <?php
+            if(is_logged_in()){
+                echo '<button class="btn btn-success btn-sm add-selected-question" disabled>Add Selected Questions</button>';
+            }
+            else{
+                echo anchor("auth/login?location=".urlencode($_SERVER['REQUEST_URI']), "Add Selected Questions", "class='btn btn-success btn-sm bottom-margin-sm add-selected-question'");
+            }
+            ?>
+
         </div>
     </div>
 </div>
