@@ -4,6 +4,7 @@ class Questionnaire extends CI_Controller {
     public function __construct(){
         parent::__construct();
 
+        $this->load->model("Search_model");
         $this->output->enable_profiler(TRUE);
     }
     
@@ -25,10 +26,17 @@ class Questionnaire extends CI_Controller {
         $searchTerm = rawurldecode ($searchTerm);
         $data = array();
         $years = $this->Questionnaire_model->get_distinct_years();
-        
+
+        // the new search
+        $filter = array("type"=>$field, "filter"=>array("year"=>$searchYear));
+        $searchModel = new Search_model($searchTerm, $filter);
         $this->benchmark->mark('questionnaire_start');
-        $data['questionnares'] = $this->Questionnaire_model->search($searchTerm,$field, $searchYear);
+        $data['searchResult'] = $searchModel->questionnaire_search();
         $this->benchmark->mark('questionnaire_end');
+
+
+        $data['questionnares'] = $this->Questionnaire_model->search($searchTerm,$field, $searchYear);
+
         
         $data['elapsedSearchTime'] = $this->benchmark->elapsed_time('questionnaire_start', 'questionnaire_end');
         $data['searchTerm'] = $searchTerm;

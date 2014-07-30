@@ -10,8 +10,12 @@ body {
     font-weight:bold;
 }
 
+.no-margin{
+    margin:0;
+}
+
 .no-top-margin{
-    margin-top:0px;
+    margin-top:0;
 }
 
 .top-padding-sm{
@@ -154,8 +158,16 @@ body {
 }
 
 #front-page-logo{
-    font-size: 150px;
+    font-size: 10em;
+    letter-spacing: 0.25em;
+    padding-left: 25px;
 }
+
+#logo-description{
+    letter-spacing: 0.55em;
+    font-family: sans-serif;
+}
+
 .search-btn-width{
     width: 65px;
 }

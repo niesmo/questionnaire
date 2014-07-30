@@ -53,19 +53,26 @@
                 echo '<button class="btn btn-success btn-sm bottom-margin-sm add-selected-question" data-toggle="modal" data-target="#project-selection" disabled>Add Selected Questions</button>';
             }
             else{
-                echo anchor("auth/login?location=".urlencode($_SERVER['REQUEST_URI']), "Add Selected Questions", "class='btn btn-success btn-sm bottom-margin-sm add-selected-question'");
+                echo anchor("auth/login?location=".urlencode($_SERVER['REQUEST_URI']), "Add Selected Questions", "class='btn btn-success btn-sm bottom-margin-sm add-selected-question disabled'");
             }
             ?>
 
-            <ul class="list-unstyled">
+            <table class="table">
+                <tr><th></th><th>Question</th><th class='text-right'>Concept</th><th class='text-right'>Category</th></tr>
             <?php
             foreach($questions as $question){
                 $id= $question->get_id();
                 $content =$question->get_content();
-                echo "<li>".form_checkbox($qn_id."_".$id,null,null,"class='q_checkbox'") ." ".anchor("question/detail/{$qn_id}/{$id}/", $content)."</li>";
+                echo "<tr>";
+                    echo "<td>".form_checkbox($qn_id."_".$id,null,null,"class='q_checkbox'")."</td>";
+                    echo "<td>".anchor("question/detail/{$qn_id}/{$id}/", $content)."</td>";
+                    echo "<td class='text-right'>".$question->get_concept()."</td>";
+                    echo "<td class='text-right'>".$question->get_category_name()."</td>";
+                //echo "<li>".form_checkbox($qn_id."_".$id,null,null,"class='q_checkbox'") ." ".anchor("question/detail/{$qn_id}/{$id}/", $content)."</li>";
+                echo "</tr>";
             }
             ?>
-            </ul>
+            </table>
             <?php
             if(is_logged_in()){
                 echo '<button class="btn btn-success btn-sm add-selected-question" disabled>Add Selected Questions</button>';

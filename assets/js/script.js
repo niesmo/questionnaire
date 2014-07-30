@@ -441,6 +441,7 @@ $(document).ready(function () {
     });
 
     $(".q_checkbox").change(function(){
+        $(".add-selected-question").removeClass("disabled");
         var checkedLen = $('.q_checkbox:checked').length;
         if(checkedLen === 0){
             $(".add-selected-question").text("Add Selected Questions");

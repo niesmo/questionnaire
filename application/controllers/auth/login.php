@@ -18,6 +18,10 @@ class Login extends CI_Controller {
     }
     
 	public function index(){
+        if(is_logged_in()){
+            redirect("/");
+        }
+
         $data = array();
         $hearder = array();
         
@@ -35,6 +39,10 @@ class Login extends CI_Controller {
 
     
     public function authenticate(){
+        if(is_logged_in()){
+            redirect("/");
+        }
+
         $data = array();
         $header = array();
         

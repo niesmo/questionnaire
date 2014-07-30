@@ -1,6 +1,26 @@
-<?php 
-$totalCountQuestionnairs = count($questionnares);
-$qs_each_col = ceil($totalCountQuestionnairs/3);
+<?php
+function highlight($text, $words) {
+    preg_match_all('~\w+~', $words, $m);
+    if(!$m)
+        return $text;
+    $re = '~\\b(' . implode('|', $m[0]) . ')\\b~i';
+    return preg_replace($re, '<b>$0</b>', $text);
+}
+
+function highlightWords($string, $term){
+    $term = preg_replace('/\s+/', ' ', trim($term));
+    $words = explode(' ', $term);
+
+    $highlighted = array();
+    foreach ( $words as $word ){
+        $highlighted[] = "<b>".$word."</b>";
+    }
+
+    return str_ireplace($words, $highlighted, $string);
+}
+
+$totalCountQuestionnairs = count($searchResult);
+//$qs_each_col = ceil($totalCountQuestionnairs/3);
 ?>
 <div class="container">
     <div class="row">
@@ -59,46 +79,37 @@ $qs_each_col = ceil($totalCountQuestionnairs/3);
             ?>
             <div class="row">
                 <!-- The result should be like google results -->
-                <div class="col-md-7">
+                <div class="col-md-9">
                     <?php
-                    foreach($questionnares as $questionnaire){
+                    foreach($searchResult as $result){
+                        $questions = $result->get_questions();
                         echo "<div class='questionnaire-item'>";
-                            $qnName = highlight_phrase($questionnaire->get_name(),$searchTerm, '<b>','</b>');
-                            echo heading(anchor("questionnaire/detail/".$questionnaire->get_id(),$qnName),3);
+                            $qnName = $result->get_decorated_title($searchTerm);
+                            echo heading(anchor("questionnaire/detail/".$result->get_id(),$qnName),3);
                             echo "<div class='detail'>";
                                 echo "<dl class='dl-horizontal'>";
                                     echo "<dt>Author</dt>";
-                                    $qnAuthor = highlight_phrase($questionnaire->get_author(),$searchTerm, '<b>','</b>');
+                                    $qnAuthor = highlight_phrase($result->get_author(),$searchTerm, '<b>','</b>');
                                     echo "<dd>".$qnAuthor."</dd>";
                                     echo "<dt>Year</dt>";
-                                    $qnYear = highlight_phrase($questionnaire->get_year(),$searchTerm, '<b>','</b>');
-                                    if($searchYear == $questionnaire->get_year()){
-                                        $qnYear = "<b>".$questionnaire->get_year()."</b>";
+                                    $qnYear = highlight_phrase($result->get_year(),$searchTerm, '<b>','</b>');
+                                    if($searchYear == $result->get_year()){
+                                        $qnYear = "<b>".$result->get_year()."</b>";
                                     }
                                     echo "<dd>".$qnYear."</dd>";
                                 echo "</dl>";
                             echo "</div>";
+                            echo "<div class='related-questions'><ol>";
+
+                                foreach($questions as $question){
+                                    $highlighted = highlightWords($question->content, $searchTerm);
+                                    echo "<li>".anchor("question/detail/{$result->get_id()}/{$question->question_id}",$highlighted)."</li>";
+                                }
+                            echo "</ol></div>";
                         echo "</div>";
                     }
                     ?>
                 </div>
-                <!-- I want to have the list of questionnaires in a 3 column list -->
-                <?php
-                /*
-                    for($i=0; $i<3; $i++){
-                        echo "<div class='col-md-4'><ul class='list-unstyled'>";
-                        for($j=0; $j<$qs_each_col; $j++){
-                            if (($i*$qs_each_col)+$j >= $totalCountQuestionnairs)
-                                break;
-                            $q_id = $questionnares[($i*$qs_each_col)+$j]->get_id();
-                            $phrase = $questionnares[($i*$qs_each_col)+$j]->get_name();
-                            $phrase = highlight_phrase($phrase,$searchTerm, '<span style="background-color:yellow">','</span>');
-                            echo "<li class='bottom-padding-sm'>".anchor("questionnaire/detail/".$q_id,$phrase)."</li>\n";
-                        }
-                        echo "</ul></div>";
-                    }
-                */
-                ?>
             </div>
         </div>
     </div>

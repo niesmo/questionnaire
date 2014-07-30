@@ -55,7 +55,7 @@ class Project_model extends CI_Model{
         //and then remove the questionnaire itself
         
         //all of these things happen without any effort because
-        //of the way that the forign keys are setup.
+        //of the way that the foreign keys are setup.
         
         $this->db->where("project_id" , $this->project_id);
         return $this->db->delete("project");
