@@ -119,8 +119,7 @@ class User_model extends CI_Model {
             return FALSE;
         return TRUE;
     }
-    
-    
+
     public function get_user_by_email($email){
         $this->db->where("email" , $email);
         $query = $this->db->get("user");
@@ -168,8 +167,7 @@ class User_model extends CI_Model {
             return TRUE;
         return FALSE;
     }
-    
-    
+
     public function get_notifications(){
         //SELECT u.firstName, u.lastName, p.name, cr.request_date 
         //FROM user as u, project as p, collaboration_request as cr 
@@ -208,8 +206,7 @@ class User_model extends CI_Model {
         );
         return $this->db->insert("user_project", $insertArr);
     }
-    
-    
+
     public function decline_offer($request_id){
         //first check and see if the sender intended to invite this person,
         //or are they just runnung the command from the command line!!!!
@@ -226,18 +223,16 @@ class User_model extends CI_Model {
         return $this->db->update("collaboration_request", $updateArr);
     }
     
-    
-    
-    
-    
-    
-    
-    
+    public function update_password($newPassword){
+        $hashed_password = sha1($newPassword);
+        $this->password = $hashed_password;
+
+        $this->db->where("user_id", $this->user_id);
+        $this->db->set("password", $hashed_password);
+        return $this->db->update("user");
+    }
     
 
-    
-    
-    
     
     /********************* UTILITIES **********************/
     private function set_array($userObj){
@@ -274,8 +269,7 @@ class User_model extends CI_Model {
         $query = $this->db->get("user");
         return $this->set_object($query->row());
     }
-    
-    
+
     private function user_exist(){
         $this->db->select('user_id, email');
         $this->db->where("email", $this->email);
@@ -316,9 +310,7 @@ class User_model extends CI_Model {
 
         $this->session->set_userdata($sessionConfig);
     }
-    
-    
-    
+
     private function authenticate(){
         $this->password = sha1($this->password);
         $whereArr = array(
@@ -349,8 +341,7 @@ class User_model extends CI_Model {
         
         $this->set_object($user);
     }
-    
-    
+
     private function invited_me($request_id){
         $this->db->where("collaboration_request_id" , $request_id);
         $query = $this->db->get("collaboration_request");

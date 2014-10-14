@@ -12,6 +12,9 @@ class Password extends CI_Controller{
         $this->load->model("User_model" , "MUser");
         $this->load->library('email');
 
+        $this->load->library(array("form_validation"));
+        $this->form_validation->set_error_delimiters('<li class="list-group-item list-group-item-danger">', '</li>');
+
     }
 
     public function forgot(){
@@ -89,7 +92,7 @@ class Password extends CI_Controller{
                 $data['user_id']=$res->get_user_id();
                 $this->load->view("templates/head", $header);
                 $this->load->view("templates/header");
-                $this->load->view("auth/set_new_password");
+                $this->load->view("auth/set_new_password", $data);
                 $this->load->view("templates/footer");
             }
             else{
@@ -103,12 +106,31 @@ class Password extends CI_Controller{
 
     public function set_new_password(){
         $data = $this->input->post();
+        $this->form_validation->set_rules('new_password', 'Password', 'required|min_length[6]|matches[re_new_password]|md5');
+        $this->form_validation->set_rules('re_new_password', 'Password Confirmation', 'required');
+        if($this->form_validation->run() == false){
+            $data['passwordErrors'][] = validation_errors();
+            $header['title']= "Invalid form";
+        }
+        else{
+            $user = new $this->MUser($data['user_id']);
+            $updated = $user->update_password($data['new_password']);
+            if($updated){
+                redirect("user/dashboard");
+            }
+            else{
+                $data['passwordErrors'][] = "Something went wrong while setting your new password! Please try again!";
+            }
+        }
 
         print_r($data);
+        $this->load->view("templates/head", $header);
+        $this->load->view("templates/header");
+        $this->load->view("auth/set_new_password", $data);
+        $this->load->view("templates/footer");
 
-        //check for criteria for the password
 
-        //check if they are the same
+
 
         //update the password in the database
 
