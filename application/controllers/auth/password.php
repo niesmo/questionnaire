@@ -104,6 +104,8 @@ class Password extends CI_Controller{
     public function set_new_password(){
         $data = $this->input->post();
 
+        print_r($data);
+
         //check for criteria for the password
 
         //check if they are the same
