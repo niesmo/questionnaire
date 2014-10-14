@@ -85,6 +85,7 @@ $totalCountQuestionnairs = count($searchResult);
                         $questions = $result->get_questions();
                         echo "<div class='questionnaire-item'>";
                             $qnName = $result->get_decorated_title($searchTerm);
+                            echo "<h3><div class='qn-view-count'>". "<p>12</p>" ."</div><div class='qn-select-count'>". "<p>5</p>" ."</div></h3>";
                             echo heading(anchor("questionnaire/detail/".$result->get_id(),$qnName),3);
                             echo "<div class='detail'>";
                                 echo "<dl class='dl-horizontal'>";

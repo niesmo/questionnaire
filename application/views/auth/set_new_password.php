@@ -13,6 +13,11 @@
             <?php
             echo heading("Set your new password", 3, "class='text-center'");
             echo "<hr />";
+            if(isset($passwordErrors)){
+                foreach($passwordErrors as $error){
+                    echo $error;
+                }
+            }
             echo form_open("auth/password/set_new_password","class='form'", array("user_id"=>$user_id));
             echo "<div class='input-group'><p>New password</p></div>";
             echo "<div class='input-group'>";

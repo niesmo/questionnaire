@@ -123,7 +123,6 @@ class Password extends CI_Controller{
             }
         }
 
-        print_r($data);
         $this->load->view("templates/head", $header);
         $this->load->view("templates/header");
         $this->load->view("auth/set_new_password", $data);
