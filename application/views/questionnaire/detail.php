@@ -13,7 +13,31 @@
                 <dt>Year</dt>
                 <dd><?php echo $questionnaire->get_year();?></dd>
             </dl>
-            <button class="btn btn-sm btn-success bottom-margin-sm">Add Entire Questionnaire</button>
+            <?php
+            if(is_logged_in()){
+                $dropdownProjectArr=array();
+                $dropdownProjectArr['-1'] = "Please select a project";
+                foreach($projects as $project){
+                    $dropdownProjectArr[$project->get_id()] = $project->get_name();
+                }
+
+                $modalData = array();
+                $modalData ['modal_id'] = "project-selection";
+                $modalData ['modalLabel'] = "Select Project";
+                $modalData ['modalTitle'] = "Select Project";
+                $modalData ['dropdownProjectArr'] = $dropdownProjectArr;
+                $modalData ['qn_id'] = $qn_id;
+                $modalData ['qn_name'] = $questionnaire->get_name();
+
+                $this->load->view("modals/select_project.php", $modalData);
+                echo '<button class="btn btn-sm btn-success bottom-margin-sm" data-toggle="modal" data-target="#'.$modalData['modal_id'].'">Add Entire Questionnaire</button>';
+
+            }
+            else{
+                echo anchor("auth/login?location=".urlencode($_SERVER['REQUEST_URI']), "Add Entire Questionnaire", "class='btn btn-sm btn-success bottom-margin-sm'");
+            }
+            ?>
+
 
             <?php
             $hiddenInput = array("path"=>"questionnaire/qsearch/{$qn_id}");
@@ -37,20 +61,20 @@
             if(is_logged_in()){
                 $dropdownProjectArr=array();
                 $dropdownProjectArr['-1'] = "Please select a project";
-                /*foreach($projects as $project){
+                foreach($projects as $project){
                     $dropdownProjectArr[$project->get_id()] = $project->get_name();
-                }*/
+                }
 
                 $modalData = array();
-                $modalData ['modal_id'] = "project-selection";
-                $modalData ['modalLabel'] = "Select Project";
-                $modalData ['modalTitle'] = "Select Project & Questionnaire";
+                $modalData ['modal_id'] = "project-questionnaire-selection";
+                $modalData ['modalLabel'] = "Select Project and Questionnaire";
+                $modalData ['modalTitle'] = "Select Project and Questionnaire";
                 $modalData ['dropdownProjectArr'] = $dropdownProjectArr;
-                $modalData ['q_id'] = 1;//$question->get_id();
-                $modalData ['qn_id'] = 1;//$questionnaire->get_id();
+                $modalData ['submit_btn_id'] = "add_multiple_question_modal";
+                $modalData ['qn_id'] = $qn_id;
 
-                $this->load->view("modals/select_create_project.php", $modalData);
-                echo '<button class="btn btn-success btn-sm bottom-margin-sm add-selected-question" data-toggle="modal" data-target="#project-selection" disabled>Add Selected Questions</button>';
+                $this->load->view("modals/select_project_questionnaire.php", $modalData);
+                echo '<button class="btn btn-success btn-sm bottom-margin-sm add-selected-question" data-toggle="modal" data-target="#'.$modalData ['modal_id'].'" disabled>Add Selected Questions</button>';
             }
             else{
                 echo anchor("auth/login?location=".urlencode($_SERVER['REQUEST_URI']), "Add Selected Questions", "class='btn btn-success btn-sm bottom-margin-sm add-selected-question disabled'");
@@ -63,11 +87,11 @@
             foreach($questions as $question){
                 $id= $question->get_id();
                 $content =$question->get_content();
-                echo "<tr>";
-                    echo "<td>".form_checkbox($qn_id."_".$id,null,null,"class='q_checkbox'")."</td>";
-                    echo "<td>".anchor("question/detail/{$qn_id}/{$id}/", $content)."</td>";
-                    echo "<td class='text-right'>".$question->get_concept()."</td>";
-                    echo "<td class='text-right'>".$question->get_category_name()."</td>";
+                echo "<tr data-concept='".urlencode($question->get_concept())."' data-category='".$question->get_category_id()."'>";
+                    echo "<td class='v-middle'>".form_checkbox($qn_id."_".$id,null,null,"class='q_checkbox'")."</td>";
+                    echo "<td class='v-middle'>".anchor("question/detail/{$qn_id}/{$id}/", $content)."</td>";
+                    echo "<td class='text-right'>"/*."<button class='btn btn-info btn-sm'>"*/.$question->get_concept()./*"</button>"*/"</td>";
+                    echo "<td class='text-right'>"/*."<button class='btn btn-info btn-sm'>"*/.$question->get_category_name()./*"</button>*/"</td>";
                 //echo "<li>".form_checkbox($qn_id."_".$id,null,null,"class='q_checkbox'") ." ".anchor("question/detail/{$qn_id}/{$id}/", $content)."</li>";
                 echo "</tr>";
             }

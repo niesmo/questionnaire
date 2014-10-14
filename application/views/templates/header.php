@@ -1,9 +1,11 @@
 <?php
 $projectName = $this->config->item('project_name');
 $baseUrl= $this->config->item('base_url');
+$controllerName = $this->uri->segment(1);
+$methodName = $this->uri->segment(2);
 if(!isset($projectName) || $projectName == "") $projectName = "iUSuR";
 ?>
-<div class="navbar navbar-fixed-top navbar-default" role="navigation">
+<div class="navbar navbar-fixed-top navbar-default PMS-5473" role="navigation">
 	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -35,30 +37,30 @@ if(!isset($projectName) || $projectName == "") $projectName = "iUSuR";
                         echo anchor("auth/login/logout","Logout",array("class"=>"btn btn-danger"));
                     }
                     else{
-                        echo form_open("auth/login/authenticate?location=".urlencode($_SERVER['REQUEST_URI']),"class='navbar-form no-margin'");
+                        if(strtolower($controllerName)== "auth" && strtolower($methodName) == "login"){
+                            //do nothing
+                        }
+                        else{
+                            echo form_open("auth/login/authenticate?location=".urlencode($_SERVER['REQUEST_URI']),"class='navbar-form no-margin'");
 
-                            echo "<div class='form-group'>";
-                                $attributes = array("type"=>"email", "class"=>"form-control", "name"=>"email", "placeholder"=>"Email", "value"=>set_value('email'));
-                                echo form_input($attributes);
-                            echo "</div>";
+                                echo "<div class='form-group'>";
+                                    $attributes = array("type"=>"email", "class"=>"form-control", "name"=>"email", "placeholder"=>"Email", "value"=>set_value('email'));
+                                    echo form_input($attributes);
+                                echo "</div>";
 
-                            echo "<div class='form-group'>";
-                                $attributes = array("class"=>"form-control left-margin-sm", "name"=>"password", "placeholder"=>"Password");
-                                echo form_password($attributes);
-                            echo "</div>";
+                                echo "<div class='form-group'>";
+                                    $attributes = array("class"=>"form-control left-margin-sm", "name"=>"password", "placeholder"=>"Password");
+                                    echo form_password($attributes);
+                                echo "</div>";
 
-                            echo form_submit("Login","Login","class='btn btn-primary left-margin-sm'");
-                            //echo anchor("auth/login?location=".urlencode($_SERVER['REQUEST_URI']),"Login",array("class"=>"btn btn-primary left-margin-sm"));
-                            echo anchor("auth/login?location=".urlencode($_SERVER['REQUEST_URI']),"Sign Up",array("class"=>"btn btn-success left-margin-sm"));
-                        echo form_close();
+                                echo form_submit("Login","Login","class='btn btn-primary left-margin-sm'");
+                                echo anchor("auth/login?location=".urlencode($_SERVER['REQUEST_URI']),"Sign Up",array("class"=>"btn btn-success left-margin-sm"));
+                            echo form_close();
+                        }
                     }?>
 
                 </div>
-
-				<!--<button type="submit" class="btn btn-social btn-google-plus"><i class="fa fa-google"></i> Sign in with Google</button>-->
-			<!--</form>-->
             </div>
 		</div><!--/.navbar-collapse -->
-        <?php //var_dump($this->session->all_userdata());?>
 	</div>
 </div>	

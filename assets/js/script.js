@@ -2,6 +2,14 @@ var base_url = "http://localhost/questionnaire/index.php";
 var requestInProgres = false;
 
 
+String.prototype.truncate =
+    function(n,useWordBoundary){
+        var toLong = this.length>n,
+            s_ = toLong ? this.substr(0,n-1) : this;
+        s_ = useWordBoundary && toLong ? s_.substr(0,s_.lastIndexOf(' ')) : s_;
+        return  toLong ? s_ + '&hellip;' : s_;
+    };
+
 function filter_other_questions_list(data, type) {
     $("#other-questions li:not([data-"+type+"='" + data + "'])").toggleClass("hide");
 }
@@ -38,7 +46,7 @@ function create_questionnaire(questionnaireData, callback) {
 
 function show_new_questionnaire(questionnaireData) {
     var questionnaireList = $("ul#questionnaire-list");
-    var newElement = "<li class='has-remove-icon' data-questionnaire-id='" + questionnaireData['newQuestionnaire_id'] + "'><a href='" + base_url + "/user/questionnaire/" + questionnaireData['newQuestionnaire_id'] + "'>" + questionnaireData['questionnaireName'] + "</a><a href='#' class='pull-right hidden remove-questionnaire-item trash-can' data-questionnaire-id='" + questionnaireData['newQuestionnaire_id'] + "'><i class='fa fa-trash-o '></i></a></li>";
+    var newElement = "<li class='has-remove-icon' data-questionnaire-id='" + questionnaireData['newQuestionnaire_id'] + "'><a href='" + base_url + "/user/questionnaire/detail/" + questionnaireData['newQuestionnaire_id'] + "'>" + questionnaireData['questionnaireName'] + "</a><a href='#' class='pull-right hidden remove-questionnaire-item trash-can' data-questionnaire-id='" + questionnaireData['newQuestionnaire_id'] + "'><i class='fa fa-trash-o '></i></a></li>";
 
     $("#no-questionnaire").remove();
     questionnaireList.append(newElement);
@@ -56,7 +64,7 @@ function edit_project_description(projectData, callback) {
         url:base_url + "/user/ajax/set_project_description/",
         type: "POST",
         data: projectData,
-        success:alertMessages
+        success:callback
     })
 }
 
@@ -106,7 +114,7 @@ function add_to_select(select_id, newList) {
     $("#" + select_id).append("<option value='" + -1 + "'>" + "Please select a questionnaire" + "</option>")
 
     newList.forEach(function (element, index, array) {
-        $("#" + select_id).append("<option value='" + element['id'] + "'>" + element['name'] + "</option>")
+        $("#" + select_id).append("<option value='" + element['id'] + "'>" + element['name'].truncate(25,true) + "</option>")
     });
 }
 
@@ -393,6 +401,81 @@ function populate_search_suggestion(result, id, catName){
     $("#search-suggestions").removeClass("hide");
 }
 
+function add_questionnaire_to_project(project_id,qn_id, qn_name, callBack){
+    $.ajax({
+        url: base_url + "/user/ajax/add_questionnaire_to_project",
+        method:"POST",
+        data:{
+            project_id : project_id,
+            questionnaire_id : qn_id,
+            questionnaire_name : qn_name
+        },
+        success:function(data){
+            if(trim(data) == "SUCCESS"){
+                callBack("Entire Questionnaire Added", "The entire questionnaire was successfully added to the selected project.", [{title:"View Changes", uri:base_url+"/user/project/detail/"+project_id}]);
+            }
+            else{
+                callBack("Error: Action not complete", "Something went wrong while adding the entire questionnaire to the selected project.");
+            }
+        },
+        error:function(data){
+            callBack("Error: Action not complete", "Something went wrong while adding the entire questionnaire to the selected project.");
+            console.log("Error" + data);
+        }
+
+    });
+
+}
+
+function add_questions_to_questionnaire(data, callBack){
+    console.log(data);
+    $.ajax({
+        url:base_url + "/user/ajax/add_questions_to_questionnaire",
+        method:"POST",
+        data:{
+            project_id : data.project_id,
+            questionnaire_id : data.questionnaire_id,
+            questions : data.questions
+        },
+        success:function(sdata){
+            if(trim(sdata) == "SUCCESS"){
+                callBack("Questions were added","All selected questions were successfully added to the appropriate project.", [{title:"View Details", uri:base_url+"/user/questionnaire/detail/"+data.questionnaire_id}]);
+            }
+            else{
+                callBack("Error: Action not complete", "Something went wrong while add the questions to the appropriate place!");
+            }
+        },
+        error:function(data){
+            callBack("Error: Action not complete", "Something went wrong while add the questions to the appropriate place!");
+            console.log("Error" + data);
+        }
+    });
+
+}
+
+function update_project_color(color, project_id, callBack){
+    $.ajax({
+        url:base_url+"/user/ajax/update_project_color",
+        method:"POST",
+        data:{
+            color:color,
+            project_id:project_id
+        },
+        success:function(data){
+            if(trim(data) == "SUCCESS"){
+                callBack("Color Changed","The color was successfully changed.");
+            }
+            else{
+                callBack("Error: Action not complete","Something went wrong while changing the color. The format has to be in HEX");
+            }
+        },
+        error:function(data){
+            callBack("Error: Action not complete","Something went wrong while changing the color. The format has to be in HEX");
+        }
+    });
+}
+
+
 $( document ).ajaxStart(function() {
     requestInProgres = true;
 });
@@ -425,6 +508,10 @@ $(document).ready(function () {
     $('form').validator();
     $('#quick-add').tooltip();
     $('.question-history-item').tooltip();
+    $(".square").height($(".square").width() + "px");
+    $(".square").click(function(){
+        window.location = base_url +"/" +$(this).data('href');
+    })
 
     $(".add-selected-question").click(function(){
         var checkboxes = $('.q_checkbox:checked');
@@ -573,7 +660,7 @@ $(document).ready(function () {
                 $("#similarity").css("color","green");
             }
 
-            $("#similarity").text(data + "%");
+            $("#similarity").text(data.toFixed(2) + "%");
             compareBtn.button('reset');
         });
     });
@@ -661,6 +748,21 @@ $(document).ready(function () {
                 //alert("Something went wrong! Please refresh and try again");
             }
         })
+    });
+
+    $(".project-list").change(function(){
+        var project_id = $(this).val();
+        if (project_id == -1)
+            return;
+        var destinationElement = $(this).data("dest");
+
+        if($(this).data("action") == "populate-questionnaire"){
+            $("#project-detail-link").attr('href', base_url + "/user/project/detail/" + project_id);
+            get_questionnaires(project_id, function (questionnaires) {
+                add_to_select(destinationElement, questionnaires);
+            });
+        }
+
     });
 
     $("#project-list").change(function () {
@@ -800,8 +902,55 @@ $(document).ready(function () {
             url: base_url + "/user/ajax/create_project",
             type: "POST",
             data: { "name": projectName },
+            dataType: 'json',
+            error:function(data){
+                popup("ERROR: Action not complete", "Something went wrong while creating the new project");
+            },
             success: function (data) {
-                if (data.indexOf("SUCCESS") != -1) {
+                console.log(data);
+                if(data.status == "failed"){
+                    popup("ERROR: Action not complete", "Something went wrong while creating the new project");
+                }
+                else{
+                    //popup("WARNING! Under Construction!", "The project is still not adding right away. Please refresh and look again :D!!");
+                    //return;
+
+
+                    var square = $("<div/>",{
+                        'class':'col-md-4 square',
+                        'data-href':base_url + "/user/project/detail/"+data.id,
+                        'style':'background-color:#'+data.color
+                    }).appendTo("#project-list").bind("click", function(){
+                        window.location = base_url + "/user/project/detail/"+data.id
+                    });
+
+                    square.height($(".square").width() + "px");
+
+                    var projectDetail = $("<div />",{
+                        'class':"project-detail"
+                    }).appendTo(square);
+
+                    var projectTitle = $("<a />",{
+                        href:base_url + "/user/project/detail/"+data.id,
+                        "class":"title",
+                        "text":data.name
+                    }).appendTo(projectDetail);
+
+                    var createdBy = $("<p />",{
+                        text:data.created_by_name
+                    }).appendTo(projectDetail);
+
+
+                    var creationDate = $("<p />",{
+                        text:new Date(data.creation_date).toString("MMMM d, yyyy HH:MM tt")
+                    }).appendTo(projectDetail);
+
+
+
+
+
+                }
+                /*if (data.indexOf("SUCCESS") != -1) {
                     //trimming the `data` 
                     data = trim(data);
 
@@ -824,12 +973,13 @@ $(document).ready(function () {
                     
                     $("#default-project-list").append("<option value='" + project_id + "'>" + projectName + "</option>");
                      */
+                /*
                     $("#project-name").val("");
                 }
                 else {
                     alert("Something went wrong! Refresh and try again!");
                     console.log(data);
-                }
+                }*/
             }
         }).always(function(){
             btn.button('reset');
@@ -928,6 +1078,82 @@ $(document).ready(function () {
 
         return false;
     });
+
+    $("#add-entire-questionnaire").click(function(){
+        var selectedProjectId = $("#project-list option:selected").val();
+        if(selectedProjectId == -1){
+            alert("You must chose one of the existing project, or create a new project first");
+            return;
+        }
+
+        var qn_name = $("#add-entire-questionnaire").data("questionnaireName");
+        var qn_id = $("#add-entire-questionnaire").data("questionnaireId");
+        add_questionnaire_to_project(selectedProjectId, qn_id, qn_name, popup);
+
+    });
+
+    $("#add_multiple_question_modal").click(function(){
+       // i need to know what project, questionnaire, and questions have been selected
+
+        var selectedProjectId = $("#project-list-pq option:selected").val();
+        if(selectedProjectId == -1){
+            alert("You must chose one of the existing project, or create a new project first");
+            return;
+        }
+
+        var selectedQuestionnaireId = $("#questionnaire-list-pq option:selected").val();
+        if(selectedQuestionnaireId == -1){
+            alert("You must chose one of the existing questionnaire, or create a new questionnaire first");
+            return;
+        }
+
+        var checkboxes = $('.q_checkbox:checked');
+        if(checkboxes.length === 0){
+            alert("You must select some questions before trying to add them to your project->questionnaire");
+            return;
+        }
+
+        var questionArr = Array(checkboxes.length);
+        var temp;
+        for(var i=0;i<checkboxes.length;i++){
+            temp = checkboxes[i].name;
+            temp = temp.split("_");
+            questionArr[i] = {
+                question_id : temp[1],
+                questionnaire_id : temp[0],
+                question_content : checkboxes[i].parentElement.nextElementSibling.childNodes[0].innerHTML
+            };
+        }
+
+        var data = {
+            questions : questionArr,
+            project_id : selectedProjectId,
+            questionnaire_id : selectedQuestionnaireId
+        }
+
+        add_questions_to_questionnaire(data, popup);
+    });
+
+//    $("#choose-project-color").colorpicker({
+//        showCloseButton:	false,
+//        modal:				true,
+//        showCancelButton:	false,
+//        closeOnEscape:		false
+//    });
+
+    $("#choose-project-color").change(function(){
+        $(this).css("background-color","#"+$(this).val());
+    });
+
+    $("#choose-project-color-submit").click(function(){
+        var colorHex = $("#choose-project-color").val();
+        var project_id = $(this).data("projectId");
+        $(".project-heading").css("background-color", "#"+colorHex);
+
+        update_project_color(colorHex, project_id, popup);
+
+    });
+
 
     $(".has-remove-icon").mouseenter(function () {
         $(this).find("a.trash-can").removeClass("hidden");

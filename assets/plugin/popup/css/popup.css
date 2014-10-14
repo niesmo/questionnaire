@@ -1,0 +1,35 @@
+.absolute-center{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -200px;
+	margin-top: -75px;
+	width: 400px;
+	height: 150px;
+	background-color:#bdc3c7;
+}
+
+.alert-popup .title{
+	background-color:#7f8c8d;
+	height:30px;
+}
+
+.alert-popup .title p{
+	margin:0;
+	padding-top:3px;
+	padding-left:10px;
+	font-size: 17px;
+	text-transform:capitalize;
+}
+
+.alert-popup .body p{
+	padding-left: 10px;
+    padding-top:10px;
+}
+
+.alert-popup .btns button, .alert-popup .btns a{
+	position:relative;
+	float:right;
+	top:10px;
+	margin-right:10px;
+}

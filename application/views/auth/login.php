@@ -20,6 +20,10 @@ echo form_open($baseUrl."/index.php/auth/login/".$formAction."?".$this->input->s
 </div>
 <span class="help-block" id="signin-error-placeholder"></span>
 <?php
+echo anchor("auth/password/forgot", "Forgot your password?");
+echo br();
+?>
+<?php
 $attributes = array("class"=>"btn btn-primary", "value"=>"Login");
 echo form_submit($attributes);
 ?>

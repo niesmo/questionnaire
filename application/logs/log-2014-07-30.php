@@ -16341,3 +16341,1724 @@ DEBUG - 2014-07-30 03:57:13 --> File loaded: application/views/templates/footer.
 DEBUG - 2014-07-30 03:57:13 --> Language file loaded: language/english/profiler_lang.php
 DEBUG - 2014-07-30 03:57:13 --> Final output sent to browser
 DEBUG - 2014-07-30 03:57:13 --> Total execution time: 1.6691
+DEBUG - 2014-07-30 04:31:29 --> Config Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Config Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:31:29 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:31:29 --> URI Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> URI Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Router Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Router Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Output Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Output Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Security Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Security Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Input Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Input Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:31:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:31:29 --> Language Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Language Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:31:29 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:31:29 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:31:29 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:31:29 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:31:29 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:31:29 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:31:29 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:31:29 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:31:29 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:31:29 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Database Driver Class Initialized
+ERROR - 2014-07-30 04:31:29 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-07-30 04:31:29 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:31:29 --> Session Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Session Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:31:29 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:31:29 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:31:29 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:31:29 --> Session routines successfully run
+DEBUG - 2014-07-30 04:31:29 --> Session routines successfully run
+DEBUG - 2014-07-30 04:31:29 --> Model Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Model Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Model Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Model Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Model Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Model Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Model Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Model Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:31:29 --> Final output sent to browser
+DEBUG - 2014-07-30 04:31:29 --> Final output sent to browser
+DEBUG - 2014-07-30 04:31:30 --> Total execution time: 0.6680
+DEBUG - 2014-07-30 04:31:30 --> Total execution time: 0.6680
+DEBUG - 2014-07-30 04:43:20 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:20 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:20 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:20 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:20 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:20 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:20 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:20 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:20 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:20 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:20 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:20 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:20 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:20 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:20 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:20 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:20 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:20 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:20 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:20 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:20 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:20 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:20 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:20 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:20 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:20 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:20 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:20 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:21 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:21 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:21 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:21 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:21 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:21 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:21 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:21 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:21 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:21 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:21 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:21 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:21 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Database Driver Class Initialized
+ERROR - 2014-07-30 04:43:21 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: text_helper
+ERROR - 2014-07-30 04:43:21 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-07-30 04:43:21 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-07-30 04:43:21 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:21 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:21 --> Session Class Initialized
+ERROR - 2014-07-30 04:43:21 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:21 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:21 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:21 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:21 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:21 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:21 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:21 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:21 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:21 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:21 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:21 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:21 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:21 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Model Class Initialized
+ERROR - 2014-07-30 04:43:21 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:21 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:21 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:22 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:22 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:22 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:22 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Total execution time: 1.5901
+DEBUG - 2014-07-30 04:43:22 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:22 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Total execution time: 1.4271
+DEBUG - 2014-07-30 04:43:22 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:22 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:22 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Total execution time: 1.4731
+DEBUG - 2014-07-30 04:43:22 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:22 --> Total execution time: 1.7061
+DEBUG - 2014-07-30 04:43:22 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:22 --> Total execution time: 1.5451
+DEBUG - 2014-07-30 04:43:22 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:22 --> Total execution time: 1.3591
+DEBUG - 2014-07-30 04:43:25 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:25 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:25 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:25 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:25 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:25 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:25 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:25 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:25 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:25 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:25 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:25 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:25 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:25 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> Database Driver Class Initialized
+ERROR - 2014-07-30 04:43:25 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-07-30 04:43:25 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:25 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:25 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:25 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:25 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:25 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:25 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:25 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:25 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:26 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:26 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:26 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:26 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:26 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:26 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:26 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:26 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:26 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:26 --> Total execution time: 0.6550
+DEBUG - 2014-07-30 04:43:26 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:26 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:26 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:26 --> Total execution time: 0.7460
+DEBUG - 2014-07-30 04:43:50 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:50 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:50 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:50 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:50 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:50 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:50 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:50 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:50 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:50 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:50 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:50 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:50 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:50 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:50 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:50 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:50 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:50 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:50 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:50 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:51 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:51 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:51 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:51 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:51 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:51 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:51 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:51 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:51 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:51 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:51 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:51 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:51 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Language Class Initialized
+ERROR - 2014-07-30 04:43:51 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:51 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Language Class Initialized
+ERROR - 2014-07-30 04:43:51 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:51 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:51 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:51 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:51 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:51 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:51 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:51 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:51 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:51 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:51 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:51 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Model Class Initialized
+ERROR - 2014-07-30 04:43:51 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:51 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:51 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: url_helper
+ERROR - 2014-07-30 04:43:51 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:51 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:51 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:51 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:51 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:51 --> Total execution time: 1.3101
+DEBUG - 2014-07-30 04:43:51 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:51 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:51 --> Total execution time: 1.3761
+DEBUG - 2014-07-30 04:43:51 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:52 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:52 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Config Class Initialized
+ERROR - 2014-07-30 04:43:52 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:52 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:52 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:52 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Model Class Initialized
+ERROR - 2014-07-30 04:43:52 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:52 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:52 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:52 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:52 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:52 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:52 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Total execution time: 1.1411
+DEBUG - 2014-07-30 04:43:52 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:52 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:52 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:52 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:52 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:52 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:52 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:52 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:52 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:52 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Total execution time: 1.2591
+DEBUG - 2014-07-30 04:43:52 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:52 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Total execution time: 1.4461
+DEBUG - 2014-07-30 04:43:52 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:52 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:52 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:52 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:52 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:52 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:52 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:52 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:52 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:52 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:52 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:52 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Total execution time: 1.5141
+DEBUG - 2014-07-30 04:43:52 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> URI Class Initialized
+ERROR - 2014-07-30 04:43:52 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:52 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:52 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:52 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:52 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Helper loaded: url_helper
+ERROR - 2014-07-30 04:43:52 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:52 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:52 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:52 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:52 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:52 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:53 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:53 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:53 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:53 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:53 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:53 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:53 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+ERROR - 2014-07-30 04:43:53 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:53 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:53 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:53 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:53 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:53 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:53 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:53 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:53 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:53 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:53 --> Total execution time: 1.3011
+DEBUG - 2014-07-30 04:43:53 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:53 --> Helper loaded: form_helper
+ERROR - 2014-07-30 04:43:53 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:53 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:53 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Total execution time: 1.4401
+DEBUG - 2014-07-30 04:43:53 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Session Class Initialized
+ERROR - 2014-07-30 04:43:53 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:53 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:53 --> Hooks Class Initialized
+ERROR - 2014-07-30 04:43:53 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:53 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:53 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:53 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:53 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:53 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:53 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:53 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:53 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:53 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:54 --> Total execution time: 1.3421
+DEBUG - 2014-07-30 04:43:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:54 --> Total execution time: 1.3671
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:54 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:54 --> Total execution time: 1.1621
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:54 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Total execution time: 1.7721
+DEBUG - 2014-07-30 04:43:54 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:54 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:54 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:54 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:54 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:54 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:54 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> URI Class Initialized
+ERROR - 2014-07-30 04:43:54 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:54 --> Router Class Initialized
+ERROR - 2014-07-30 04:43:54 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:54 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:54 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:54 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:54 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:54 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:54 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:54 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:54 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:54 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:54 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:54 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:54 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Total execution time: 1.1851
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:54 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:54 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Model Class Initialized
+ERROR - 2014-07-30 04:43:54 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-07-30 04:43:54 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:54 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:54 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:55 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:55 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:55 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:55 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:55 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:55 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Total execution time: 1.5381
+DEBUG - 2014-07-30 04:43:55 --> A session cookie was not found.
+ERROR - 2014-07-30 04:43:55 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:55 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:55 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:55 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:55 --> Output Class Initialized
+ERROR - 2014-07-30 04:43:55 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:55 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:55 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:55 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:55 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:55 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:55 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:55 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:55 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:55 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Total execution time: 1.3191
+DEBUG - 2014-07-30 04:43:55 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:55 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:55 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:55 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:55 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:55 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:55 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:55 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Total execution time: 1.5781
+DEBUG - 2014-07-30 04:43:55 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:55 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:55 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:55 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Total execution time: 1.5281
+DEBUG - 2014-07-30 04:43:55 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:55 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:55 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Helper loaded: html_helper
+ERROR - 2014-07-30 04:43:55 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:55 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Total execution time: 1.6711
+DEBUG - 2014-07-30 04:43:55 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:55 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Config Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:55 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:55 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:55 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:55 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:55 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:43:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:55 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:55 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+ERROR - 2014-07-30 04:43:56 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:56 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:43:56 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> URI Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:56 --> Router Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:56 --> Output Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:56 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:56 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Security Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Input Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Language Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:56 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:56 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Helper loaded: html_helper
+ERROR - 2014-07-30 04:43:56 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:56 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:43:56 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:56 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:56 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:56 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:56 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:43:56 --> Total execution time: 1.3941
+DEBUG - 2014-07-30 04:43:56 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:56 --> Total execution time: 1.6961
+DEBUG - 2014-07-30 04:43:56 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:56 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:56 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:43:56 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:56 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:56 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:43:56 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:56 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:43:56 --> Helper loaded: text_helper
+ERROR - 2014-07-30 04:43:56 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Session Class Initialized
+ERROR - 2014-07-30 04:43:56 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Helper loaded: string_helper
+ERROR - 2014-07-30 04:43:56 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:43:56 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:56 --> Session Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:56 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:56 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:43:56 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:56 --> Session routines successfully run
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:56 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:57 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:57 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:57 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:57 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:57 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:57 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:57 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:57 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:57 --> Total execution time: 1.5441
+DEBUG - 2014-07-30 04:43:57 --> Total execution time: 1.3371
+DEBUG - 2014-07-30 04:43:57 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:43:57 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:57 --> Total execution time: 1.2181
+DEBUG - 2014-07-30 04:43:57 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:57 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:57 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:57 --> Model Class Initialized
+DEBUG - 2014-07-30 04:43:57 --> Final output sent to browser
+DEBUG - 2014-07-30 04:43:57 --> Total execution time: 1.5011
+DEBUG - 2014-07-30 04:44:01 --> Config Class Initialized
+DEBUG - 2014-07-30 04:44:01 --> Config Class Initialized
+DEBUG - 2014-07-30 04:44:01 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:44:01 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:44:01 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:44:01 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:44:01 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:44:02 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:44:02 --> URI Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> URI Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Router Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Router Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Output Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Output Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Security Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Security Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Input Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Input Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:44:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:44:02 --> Language Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Language Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:44:02 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:44:02 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:44:02 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:44:02 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:44:02 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:44:02 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:44:02 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:44:02 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:44:02 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:44:02 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Database Driver Class Initialized
+ERROR - 2014-07-30 04:44:02 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-07-30 04:44:02 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:44:02 --> Session Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Session Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:44:02 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:44:02 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:44:02 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:44:02 --> Session routines successfully run
+DEBUG - 2014-07-30 04:44:02 --> Session routines successfully run
+DEBUG - 2014-07-30 04:44:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Final output sent to browser
+DEBUG - 2014-07-30 04:44:02 --> Total execution time: 0.7770
+DEBUG - 2014-07-30 04:44:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:02 --> Final output sent to browser
+DEBUG - 2014-07-30 04:44:02 --> Total execution time: 0.8771
+DEBUG - 2014-07-30 04:44:13 --> Config Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Config Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:44:13 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:44:13 --> URI Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> URI Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Router Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Router Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Output Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Output Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Security Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Security Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Input Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Input Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:44:13 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:44:13 --> Language Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Language Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:44:13 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:44:13 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:44:13 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:44:13 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:44:13 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:44:13 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:44:13 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:44:13 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:44:13 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:44:13 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Database Driver Class Initialized
+ERROR - 2014-07-30 04:44:13 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-07-30 04:44:13 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:44:13 --> Session Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Session Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:44:13 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:44:13 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:44:13 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:44:13 --> Session routines successfully run
+DEBUG - 2014-07-30 04:44:13 --> Session routines successfully run
+DEBUG - 2014-07-30 04:44:13 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Final output sent to browser
+DEBUG - 2014-07-30 04:44:13 --> Total execution time: 0.6960
+DEBUG - 2014-07-30 04:44:13 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:13 --> Final output sent to browser
+DEBUG - 2014-07-30 04:44:14 --> Total execution time: 0.7920
+DEBUG - 2014-07-30 04:44:52 --> Config Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Config Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:44:52 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:44:52 --> URI Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> URI Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Router Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Router Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Output Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Output Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Security Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Security Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Config Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Config Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Config Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Input Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Input Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Config Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:44:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:44:52 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:44:52 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Language Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:44:52 --> URI Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Language Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:44:52 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> Router Class Initialized
+DEBUG - 2014-07-30 04:44:52 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:44:53 --> URI Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> URI Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> URI Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Output Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:44:53 --> Router Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Router Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:44:53 --> Router Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Security Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Output Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Output Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Input Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:44:53 --> Output Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Security Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:44:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:44:53 --> Security Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Security Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Input Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:44:53 --> Language Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:44:53 --> Input Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Input Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:44:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:44:53 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:44:53 --> Language Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:44:53 --> Language Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:44:53 --> Database Driver Class Initialized
+ERROR - 2014-07-30 04:44:53 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:44:53 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Language Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Session Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: authentication_helper
+ERROR - 2014-07-30 04:44:53 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:44:53 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:44:53 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:44:53 --> Session Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:44:53 --> Session routines successfully run
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:44:53 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:44:53 --> A session cookie was not found.
+ERROR - 2014-07-30 04:44:53 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:44:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:44:53 --> Session routines successfully run
+DEBUG - 2014-07-30 04:44:53 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:44:53 --> Session Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: text_helper
+ERROR - 2014-07-30 04:44:53 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:44:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:44:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Session Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:44:53 --> Config Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Config Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: string_helper
+ERROR - 2014-07-30 04:44:53 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:44:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Session routines successfully run
+DEBUG - 2014-07-30 04:44:53 --> Model Class Initialized
+ERROR - 2014-07-30 04:44:53 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:44:53 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:44:53 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Session Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:44:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Session routines successfully run
+DEBUG - 2014-07-30 04:44:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Session Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:44:53 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:44:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:44:53 --> Session routines successfully run
+DEBUG - 2014-07-30 04:44:53 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:44:53 --> URI Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> Final output sent to browser
+DEBUG - 2014-07-30 04:44:53 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:53 --> URI Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:44:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Final output sent to browser
+DEBUG - 2014-07-30 04:44:54 --> Router Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Total execution time: 1.3921
+DEBUG - 2014-07-30 04:44:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Router Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Output Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Total execution time: 1.4481
+DEBUG - 2014-07-30 04:44:54 --> Session routines successfully run
+DEBUG - 2014-07-30 04:44:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Security Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Output Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Final output sent to browser
+DEBUG - 2014-07-30 04:44:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Total execution time: 1.3101
+DEBUG - 2014-07-30 04:44:54 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Security Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Final output sent to browser
+DEBUG - 2014-07-30 04:44:54 --> Input Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Total execution time: 1.3521
+DEBUG - 2014-07-30 04:44:54 --> Input Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Final output sent to browser
+DEBUG - 2014-07-30 04:44:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:44:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Total execution time: 1.3101
+DEBUG - 2014-07-30 04:44:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:44:54 --> Language Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Language Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:44:54 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Final output sent to browser
+DEBUG - 2014-07-30 04:44:54 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:44:54 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:44:54 --> Total execution time: 1.5711
+DEBUG - 2014-07-30 04:44:54 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:44:54 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:44:54 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:44:54 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:44:54 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:44:54 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:44:54 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Helper loaded: text_helper
+ERROR - 2014-07-30 04:44:54 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:44:54 --> Database Driver Class Initialized
+ERROR - 2014-07-30 04:44:54 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:44:54 --> Session Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:44:54 --> Session Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:44:54 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:44:54 --> Session routines successfully run
+DEBUG - 2014-07-30 04:44:54 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:44:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Session routines successfully run
+DEBUG - 2014-07-30 04:44:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Model Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Final output sent to browser
+DEBUG - 2014-07-30 04:44:54 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:44:54 --> Total execution time: 1.1661
+DEBUG - 2014-07-30 04:44:55 --> Final output sent to browser
+DEBUG - 2014-07-30 04:44:55 --> Total execution time: 1.2631
+DEBUG - 2014-07-30 04:45:01 --> Config Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Config Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:45:01 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:45:01 --> URI Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> URI Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Router Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Router Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Output Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Output Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Security Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Security Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Input Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Input Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:45:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:45:01 --> Language Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Language Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Config Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:45:01 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:45:01 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:45:01 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:45:01 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:45:01 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:45:01 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:45:01 --> URI Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:45:01 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:45:01 --> Router Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:45:01 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:45:01 --> Output Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:45:01 --> Security Class Initialized
+ERROR - 2014-07-30 04:45:01 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-07-30 04:45:01 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:45:01 --> Input Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Session Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Session Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Config Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:45:02 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:45:02 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:45:02 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:45:02 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:45:02 --> Language Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Session routines successfully run
+DEBUG - 2014-07-30 04:45:02 --> Session routines successfully run
+DEBUG - 2014-07-30 04:45:02 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:45:02 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:45:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> URI Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:45:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Router Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:45:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Output Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:45:02 --> Security Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:45:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Input Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Model Class Initialized
+ERROR - 2014-07-30 04:45:02 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:45:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:45:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Session Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Language Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Final output sent to browser
+DEBUG - 2014-07-30 04:45:02 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:45:02 --> Total execution time: 1.1881
+DEBUG - 2014-07-30 04:45:02 --> Final output sent to browser
+DEBUG - 2014-07-30 04:45:02 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:45:02 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:45:02 --> Total execution time: 1.2621
+DEBUG - 2014-07-30 04:45:02 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:45:02 --> Session routines successfully run
+DEBUG - 2014-07-30 04:45:02 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:45:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:45:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:45:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Model Class Initialized
+ERROR - 2014-07-30 04:45:02 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:45:02 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Session Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:02 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:45:03 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:45:03 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Session routines successfully run
+DEBUG - 2014-07-30 04:45:03 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Final output sent to browser
+DEBUG - 2014-07-30 04:45:03 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Config Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Config Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Total execution time: 1.3421
+DEBUG - 2014-07-30 04:45:03 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:45:03 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:45:03 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> URI Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> URI Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Router Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Router Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Output Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Output Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Security Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Security Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Input Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Input Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:45:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:45:03 --> Final output sent to browser
+DEBUG - 2014-07-30 04:45:03 --> Language Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Language Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Total execution time: 1.4491
+DEBUG - 2014-07-30 04:45:03 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:45:03 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:45:03 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:45:03 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:45:03 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:45:03 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:45:03 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:45:03 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:45:03 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:45:03 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:45:03 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Database Driver Class Initialized
+ERROR - 2014-07-30 04:45:03 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-07-30 04:45:03 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:45:03 --> Session Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Session Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:45:03 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:45:03 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:45:03 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:45:03 --> Session routines successfully run
+DEBUG - 2014-07-30 04:45:03 --> Session routines successfully run
+DEBUG - 2014-07-30 04:45:03 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:03 --> Final output sent to browser
+DEBUG - 2014-07-30 04:45:04 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:04 --> Total execution time: 0.9151
+DEBUG - 2014-07-30 04:45:04 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:04 --> Final output sent to browser
+DEBUG - 2014-07-30 04:45:04 --> Total execution time: 0.9891
+DEBUG - 2014-07-30 04:45:05 --> Config Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Config Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Hooks Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Utf8 Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:45:05 --> UTF-8 Support Enabled
+DEBUG - 2014-07-30 04:45:05 --> URI Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> URI Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Router Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Router Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Output Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Output Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Security Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Security Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Input Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Input Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:45:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-07-30 04:45:05 --> Language Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Language Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Loader Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:45:05 --> Helper loaded: authentication_helper
+DEBUG - 2014-07-30 04:45:05 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:45:05 --> Helper loaded: url_helper
+DEBUG - 2014-07-30 04:45:05 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:45:05 --> Helper loaded: html_helper
+DEBUG - 2014-07-30 04:45:05 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:45:05 --> Helper loaded: form_helper
+DEBUG - 2014-07-30 04:45:05 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:45:05 --> Helper loaded: text_helper
+DEBUG - 2014-07-30 04:45:05 --> Database Driver Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Database Driver Class Initialized
+ERROR - 2014-07-30 04:45:05 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-07-30 04:45:05 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\Program Files (x86)\Zend\Apache2\htdocs\questionnaire\CI_system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-07-30 04:45:05 --> Session Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Session Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:45:05 --> Helper loaded: string_helper
+DEBUG - 2014-07-30 04:45:05 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:45:05 --> A session cookie was not found.
+DEBUG - 2014-07-30 04:45:05 --> Session routines successfully run
+DEBUG - 2014-07-30 04:45:05 --> Session routines successfully run
+DEBUG - 2014-07-30 04:45:05 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Controller Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Final output sent to browser
+DEBUG - 2014-07-30 04:45:05 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Total execution time: 0.7450
+DEBUG - 2014-07-30 04:45:05 --> Model Class Initialized
+DEBUG - 2014-07-30 04:45:05 --> Final output sent to browser
+DEBUG - 2014-07-30 04:45:05 --> Total execution time: 0.8200

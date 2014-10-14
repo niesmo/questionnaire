@@ -15,8 +15,19 @@ if(!isset($title) || $title == ""){
 	<link href="<?=$assets?>/plugin/bootstrap/css/themes/yeti.min.css" rel="stylesheet">
     <link href="<?=$assets?>/plugin/bootstrap/css/font-awesome.css" rel="stylesheet">
     <link href="<?=$assets?>/plugin/bootstrap/css/bootstrap-social.css" rel="stylesheet">
-	
-	<link href="<?=$assets?>/css/style.css" rel="stylesheet">
+
+    <!--jQuery UI -->
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css"/>
+
+    <!-- popup -->
+    <link href="<?=$assets?>/plugin/popup/css/popup.css" rel="stylesheet">
+
+    <!-- color picker -->
+    <link href="<?=$assets?>/plugin/colorpicker/css/jquery.colorpicker.css" rel="stylesheet">
+
+    <link href="//fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400italic,400,700italic,700,900italic,900" rel="stylesheet" type="text/css">
+
+    <link href="<?=$assets?>/css/style.css" rel="stylesheet">
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>

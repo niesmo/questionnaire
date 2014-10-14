@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-md-12 text-center">
             <h1 id="front-page-logo">iUSuR</h1>
-            <p id="logo-description">Informative Usability Survey Research</p>
+            <p id="logo-description">Intelligence in Usability Survey Research</p>
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <?php

@@ -72,7 +72,11 @@ class User_model extends CI_Model {
         else
             return false;
     }
-    
+
+    public function get_email(){
+        return $this->email;
+    }
+
     public function get_user(){
         
         if(!isset($this->user_id) || $this->user_id == NULL || $this->user_id == 0){            
@@ -121,6 +125,16 @@ class User_model extends CI_Model {
         $this->db->where("email" , $email);
         $query = $this->db->get("user");
         if($query->num_rows() == 0){
+            return NULL;
+        }
+        return $this->set_object($query->row());
+    }
+
+    public function get_user_by_full_name($full_name){
+        //SELECT * FROM user WHERE CONCAT(firstName," " ,lastName) = "Nima Esmaili Mokaram";
+        $this->db->where("concat(firstName, ' ', lastName) = '{$full_name}'" );
+        $query = $this->db->get("user");
+        if($query->num_rows() == 0 || $query->num_rows() > 1){
             return NULL;
         }
         return $this->set_object($query->row());

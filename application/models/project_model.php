@@ -1,9 +1,16 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Project_model extends CI_Model{
+class Project_model extends CI_Model implements JsonSerializable{
     private $project_id;
     private $name;
     private $description;
+    private $creation_date;
+    private $created_by_id;
+    private $created_by_name;
+    private $last_modified_date;
+    private $last_modified_by_id;
+    private $last_modified_name;
+    private $color;
     
     private $questionnaires;
     
@@ -33,12 +40,66 @@ class Project_model extends CI_Model{
     public function get_description(){
         return ($this->description == ""? "No description is defined":$this->description);
     }
+
+    public function get_color(){
+
+        if(isset($this->color)){
+            return $this->color;
+        }
+        $colors = $this->config->item('colors');
+        return $colors[$this->project_id%count($colors)];
+    }
+
+    public function get_created_name(){
+        if(!isset($this->created_by_name) || is_null($this->created_by_name)){
+            $this->db->select("firstName, lastName");
+            $this->db->from("user as u");
+            $this->db->join("project as p", "p.created_by_id = u.user_id");
+            $this->db->where("p.created_by_id = {$this->created_by_id}");
+            $query = $this->db->get();
+            $this->created_by_name = $query->result()[0]->firstName . " " .$query->result()[0]->lastName;
+        }
+        return $this->created_by_name;
+    }
+
+    public function get_creation_date_pretty(){
+        return date("F j, Y, g:i a", strtotime($this->creation_date));
+    }
+
+    public function get_last_modified_name(){
+        if(!isset($this->last_modified_name) || is_null($this->last_modified_name)){
+            if(!isset($this->last_modified_by_id)){
+                $this->last_modified_name = "N/A";
+            }
+            else{
+                $this->db->select("firstName, lastName");
+                $this->db->from("user as u");
+                $this->db->join("project as p", "p.last_modified_by_id = u.user_id");
+                $this->db->where("p.last_modified_by_id = {$this->last_modified_by_id}");
+                $query = $this->db->get();
+                $this->last_modified_name = $query->result()[0]->firstName . " " .$query->result()[0]->lastName;
+            }
+        }
+        return $this->last_modified_name;
+    }
+
+    public function get_last_modification_date_pretty(){
+        if(isset($this->last_modified_date)){
+            return date("F j, Y, g:i a", strtotime($this->last_modified_date));
+        }else{
+            return "N/A";
+        }
+
+
+    }
+
+
     
     public function quick_create($name = NULL){
         if(isset($name) && $name != NULL){
             $this->name = $name;
         }
-        return $this->create(); 
+        return $this->create();
     }
     
     public function create(){
@@ -86,10 +147,17 @@ class Project_model extends CI_Model{
         if(!isset($this->project_id) || $this->project_id == NULL){
             return FALSE;
         }
-        
+
+        $this->last_modified_date = date("Y-m-d H:i:s",time());
+        $this->last_modified_by_id = $this->session->userdata("user_id");
+
         $updateArr = array();
         if(isset($this->name)) $updateArr['name'] = $this->name;
         if(isset($this->description)) $updateArr['description'] = $this->description;
+        if(isset($this->color)) $updateArr['color'] = $this->color;
+        $updateArr['last_modified_date'] = $this->last_modified_date;
+        $updateArr['last_modified_by_id'] = $this->last_modified_by_id;
+
         
         $this->db->where("project_id" , $this->project_id);
         return $this->db->update("project", $updateArr);
@@ -139,9 +207,32 @@ class Project_model extends CI_Model{
         return $results;
 
     }
-    
-    
-    
+
+    public function set_project_color($color){
+        $this->color = $color;
+        return $this->update();
+    }
+
+
+
+
+
+
+
+
+    public function jsonSerialize() {
+        return [
+            'id' => $this->project_id,
+            'name' => $this->name,
+            'description' => $this->description,
+            'creation_date'=>$this->creation_date,
+            "created_by_id"=>$this->created_by_id,
+            "created_by_name"=>$this->created_by_name,
+            "last_modified_date"=>$this->last_modified_date,
+            "last_modified_by_id"=>$this->last_modified_by_id,
+            "color"=>$this->get_color()
+        ];
+    }
     
     
     
@@ -171,27 +262,53 @@ class Project_model extends CI_Model{
     }
     
     private function insert_project(){
+        $CI = &get_instance();
+        $CI->load->model("User_model", "MUser");
+
+        $this->created_by_id = $this->session->userdata('user_id');
+        $userTemp = new $CI->MUser($this->created_by_id);
+        $this->creation_date = date("Y-m-d H:i:s",time());
+
         $insertArr = array(
            "project_id" => null,
            "name"=> $this->name,
-           "description"=> $this->description
+           "description"=> $this->description,
+           "created_by_id"=>$this->created_by_id,
         );
         $this->db->insert("project", $insertArr);
+        $insertArr['created_by_name'] = $userTemp->get_username();
+
         $insertArr['project_id'] = $this->db->insert_id();
         $this->set_array($insertArr);
         return $this;
     }
     
     private function set_array($projectObj){
-        if(isset($projectObj['project_id']))       $this->project_id   = (int)$projectObj['project_id'];
-        if(isset($projectObj['name']))             $this->name         = $projectObj['name'];
-        if(isset($projectObj['description']))      $this->description  = $projectObj['description'];
+        if(isset($projectObj['project_id']))            $this->project_id           = (int)$projectObj['project_id'];
+        if(isset($projectObj['name']))                  $this->name                 = $projectObj['name'];
+        if(isset($projectObj['description']))           $this->description          = $projectObj['description'];
+
+        if(isset($projectObj['created_by_id']))         $this->created_by_id        = $projectObj['created_by_id'];
+        if(isset($projectObj['created_by_name']))       $this->created_by_name      = $projectObj['created_by_name'];
+        if(isset($projectObj['creation_date']))         $this->creation_date        = $projectObj['creation_date'];
+        if(isset($projectObj['last_modified_by_id']))   $this->last_modified_by_id  = $projectObj['last_modified_by_id'];
+        if(isset($projectObj['last_modified_date']))    $this->last_modified_date   = $projectObj['last_modified_date'];
+
+        if(isset($projectObj['color']))                 $this->color                = $projectObj['color'];
     }
     
     private function set_object($projectObj){
-        if(isset($projectObj->project_id))     $this->project_id   = (int)$projectObj->project_id;
-        if(isset($projectObj->name))           $this->name         = $projectObj->name;
-        if(isset($projectObj->description))    $this->description  = $projectObj->description;
+        if(isset($projectObj->project_id))          $this->project_id           = (int)$projectObj->project_id;
+        if(isset($projectObj->name))                $this->name                 = $projectObj->name;
+        if(isset($projectObj->description))         $this->description          = $projectObj->description;
+
+        if(isset($projectObj->created_by_id))       $this->created_by_id        = $projectObj->created_by_id;
+        if(isset($projectObj->created_by_name))     $this->created_by_name      = $projectObj->created_by_name;
+        if(isset($projectObj->creation_date))       $this->creation_date        = $projectObj->creation_date;
+        if(isset($projectObj->last_modified_by_id)) $this->last_modified_by_id  = $projectObj->last_modified_by_id;
+        if(isset($projectObj->last_modified_date))  $this->last_modified_date   = $projectObj->last_modified_date;
+
+        if(isset($projectObj->color))               $this->color                = $projectObj->color;
     }
     
     private function set_project_by_id($p_id){

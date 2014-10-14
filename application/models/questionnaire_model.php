@@ -5,6 +5,8 @@ class Questionnaire_model extends CI_Model{
     private $author;
     private $year;
     private $status;
+    private $view_count;
+    private $select_count;
     
     private $questions;
     
@@ -251,6 +253,8 @@ class Questionnaire_model extends CI_Model{
         if(isset($questionnaireObj['author']))              $this->author               = $questionnaireObj['author'];
         if(isset($questionnaireObj['year']))                $this->year                 = (int)$questionnaireObj['year'];
         if(isset($questionnaireObj['status']))              $this->status               = $questionnaireObj['status'];         else $this->status = "COMPLETE";
+        if(isset($questionnaireObj['view_count']))          $this->view_count           = (int)$questionnaireObj['view_count'];
+        if(isset($questionnaireObj['select_count']))        $this->select_count         = (int)$questionnaireObj['select_count'];
 
         return $this;
     }
@@ -261,7 +265,10 @@ class Questionnaire_model extends CI_Model{
         if(isset($questionnaireObj->author))            $this->author           = $questionnaireObj->author;
         if(isset($questionnaireObj->year))              $this->year             = (int)$questionnaireObj->year;
         if(isset($questionnaireObj->status))            $this->status           = $questionnaireObj->status;
-        
+        if(isset($questionnaireObj->select_count))      $this->select_count     = (int)$questionnaireObj->select_count;
+        if(isset($questionnaireObj->view_count))        $this->view_count       = (int)$questionnaireObj->view_count;
+
+
         return $this;
     }
 }

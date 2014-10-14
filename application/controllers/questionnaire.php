@@ -3,8 +3,9 @@
 class Questionnaire extends CI_Controller {
     public function __construct(){
         parent::__construct();
-
+        $this->load->model("User_project_model", "MUserProject");
         $this->load->model("Search_model");
+
         $this->output->enable_profiler(TRUE);
     }
     
@@ -79,11 +80,17 @@ class Questionnaire extends CI_Controller {
         //Get the questionnaire and its questions
         $questionnaire = new Questionnaire_model($id);
         $questions = $questionnaire->get_questions();
-        
+        if(is_logged_in()){
+
+            $projects = $this->MUserProject->get_projects();
+            $data['projects'] = $projects;
+        }
+
+
         $data['questionnaire'] = $questionnaire;
         $data['questions'] = $questions;
         
-        $this->load->view('templates/head.php', array('title'=>"Detail of Questionnaire '".character_limiter($questionnaire->get_name(), 15)."'"));
+        $this->load->view('templates/head.php', array('title'=>"Details of Questionnaire ".character_limiter($questionnaire->get_name(), 15)));
 		$this->load->view('templates/header.php');
         $this->load->view("questionnaire/detail", $data);
         $this->load->view('templates/footer.php');

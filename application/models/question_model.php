@@ -28,6 +28,10 @@ class Question_model extends CI_Model{
     public function get_id(){
         return $this->question_id;
     }
+
+    public function get_question_id(){
+        return $this->question_id;
+    }
     
     public function set_id($id){
         $this->question_id = $id;

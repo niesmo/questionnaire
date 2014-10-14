@@ -34,7 +34,7 @@ if (defined('ENVIRONMENT'))
 	{
 		case 'development':
 			error_reporting(E_ALL);
-            ini_set('display_errors','On'); 
+            ini_set('display_errors','On');
 		break;
 	
 		case 'testing':
@@ -200,6 +200,9 @@ if (defined('ENVIRONMENT'))
  * And away we go...
  *
  */
+//setting the timezone
+date_default_timezone_set('America/New_York');
+
 require_once BASEPATH.'core/CodeIgniter.php';
 
 /* End of file index.php */

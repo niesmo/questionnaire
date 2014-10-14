@@ -3,10 +3,10 @@
 class User_questionnaire_model extends CI_Model {
     private $user_questionnaire_id;
     private $name;
-    
     private $created_by;
     private $creation_date;
     private $project_id;
+    private $ref_questionnaire_id;
     
     private $questions;
     
@@ -81,6 +81,46 @@ class User_questionnaire_model extends CI_Model {
         $this->db->where("user_questionnaire_id" , $this->user_questionnaire_id);
         return $this->db->delete("user_questionnaire");
     }
+
+    public function save(){
+        if(isset($this->name) && !is_null($this->name)){
+            if($this->insert() == 1){
+                return $this->user_questionnaire_id;
+            }
+            else{
+                return false;
+            }
+        }
+        else{
+            return false;
+        }
+    }
+
+    public function insert_questions($questionArr){
+        $allRows = [];
+        foreach($questionArr as $question){
+            $insertArray = array(
+                "user_question_id"=>NULL,
+                "content"=>$question->get_content(),
+                "question_id"=>$question->get_question_id(),
+                "created_by"=>$this->session->userdata("user_id"),
+                "questionnaire_id"=>$this->user_questionnaire_id,
+                "creation_date"=>date( 'Y-m-d H:i:s'),
+                "modified_by"=>NULL
+            );
+            $allRows[] = $insertArray;
+        }
+
+        return $this->db->insert_batch("user_question", $allRows);
+
+    }
+
+    public function updated(){
+        $this->db->set("last_modified_date", date( 'Y-m-d H:i:s'));
+        $this->db->set("last_modified_by_id", $this->session->userdata("user_id"));
+        $this->db->where("project_id", $this->project_id);
+        $this->db->update("project");
+    }
     
     
     
@@ -92,13 +132,23 @@ class User_questionnaire_model extends CI_Model {
     
     
     
-    
-    
-    
-    
-    
-    
-    
+    private function insert(){
+
+        $insertArr = array(
+            "user_questionnaire_id"=>NULL,
+            "name"=>$this->name,
+            "created_by"=>$this->created_by,
+            "project_id"=>$this->project_id
+        );
+
+        $returnVal = $this->db->insert("user_questionnaire", $insertArr);
+
+        $insertArr['user_questionnaire_id'] = $this->db->insert_id();
+        $this->set_array($insertArr);
+        return $returnVal;
+    }
+
+
     private function set_questions(){
         $this->db->select("q.*");
         $this->db->from("user_questionnaire as qn");
@@ -123,20 +173,22 @@ class User_questionnaire_model extends CI_Model {
     
     
     private function set_array($userQuestionnaireObj){
-        if(isset($userQuestionnaireObj['user_questionnaire_id'])) $this->user_questionnaire_id = (int)$userQuestionnaireObj['user_questionnaire_id'];
-        if(isset($userQuestionnaireObj['name']))          $this->name          = $userQuestionnaireObj['name'];
-        if(isset($userQuestionnaireObj['project_id']))       $this->project_id       = (int)$userQuestionnaireObj['project_id'];
-        if(isset($userQuestionnaireObj['created_by']))       $this->created_by       = (int)$userQuestionnaireObj['created_by'];
-        if(isset($userQuestionnaireObj['creation_date']))       $this->creation_date       = $userQuestionnaireObj['creation_date'];
+        if(isset($userQuestionnaireObj['user_questionnaire_id']))   $this->user_questionnaire_id    = (int)$userQuestionnaireObj['user_questionnaire_id'];
+        if(isset($userQuestionnaireObj['name']))                    $this->name                     = $userQuestionnaireObj['name'];
+        if(isset($userQuestionnaireObj['project_id']))              $this->project_id               = (int)$userQuestionnaireObj['project_id'];
+        if(isset($userQuestionnaireObj['created_by']))              $this->created_by               = (int)$userQuestionnaireObj['created_by'];
+        if(isset($userQuestionnaireObj['creation_date']))           $this->creation_date            = $userQuestionnaireObj['creation_date'];
+        if(isset($userQuestionnaireObj['ref_questionnaire_id']))    $this->ref_questionnaire_id     = (int)$userQuestionnaireObj['ref_questionnaire_id'];
         
     }
     
     private function set_object($userQuestionnaireObj){
-        if(isset($userQuestionnaireObj->user_questionnaire_id))   $this->user_questionnaire_id =   (int)$userQuestionnaireObj->user_questionnaire_id;
-        if(isset($userQuestionnaireObj->name))            $this->name          =   $userQuestionnaireObj->name;
-        if(isset($userQuestionnaireObj->project_id))         $this->project_id       =   (int)$userQuestionnaireObj->project_id;
-        if(isset($userQuestionnaireObj->created_by))         $this->created_by       =   (int)$userQuestionnaireObj->created_by;
-        if(isset($userQuestionnaireObj->creation_date))        $this->creation_date      =   $userQuestionnaireObj->creation_date;
+        if(isset($userQuestionnaireObj->user_questionnaire_id))     $this->user_questionnaire_id    = (int)$userQuestionnaireObj->user_questionnaire_id;
+        if(isset($userQuestionnaireObj->name))                      $this->name                     = $userQuestionnaireObj->name;
+        if(isset($userQuestionnaireObj->project_id))                $this->project_id               = (int)$userQuestionnaireObj->project_id;
+        if(isset($userQuestionnaireObj->created_by))                $this->created_by               = (int)$userQuestionnaireObj->created_by;
+        if(isset($userQuestionnaireObj->creation_date))             $this->creation_date            = $userQuestionnaireObj->creation_date;
+        if(isset($userQuestionnaireObj->ref_questionnaire_id))      $this->ref_questionnaire_id     = (int)$userQuestionnaireObj->ref_questionnaire_id;
     }
     
     private function set_user_questionnaire_by_id($uq_id){

@@ -38,6 +38,10 @@ class User_question_model extends CI_Model {
     public function get_content(){
         return $this->content;
     }
+
+    public function get_question_id(){
+        return $this->question_id;
+    }
     
     public function get_creation_date(){
         return $this->creation_date;

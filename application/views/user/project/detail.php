@@ -2,9 +2,9 @@
     <div class="row">
         <div class="col-md-12">
             <?php
-            echo heading("Project {$project->get_name()}", 2);
+            echo heading("Project {$project->get_name()}", 2,"class='pull-left project-heading' style='background-color:#{$project->get_color()}'");
             ?>
-            <div class="row">
+            <div class="row clear-both">
                 <div class="col-md-8">
                     <?php
                     echo heading("Description <button class='btn btn-success btn-xs' id='edit-description'>Edit</button><button class='btn btn-info btn-xs hidden' id='save-description' data-project-id='{$project->get_id()}'>Save</button>", 3);
@@ -43,6 +43,42 @@
                                 echo "</ul>";
                             }
                             ?>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <?php echo heading("Choose a color for your project", 4);
+                            $allColors = $this->config->item("colors");?>
+                            <div class="input-group col-md-6">
+                                <select id="choose-project-color" class="form-control" style="background-color:#<?= $project->get_color()?>">
+                                    <?php
+                                    $first = true;
+                                    foreach($allColors as $color){
+                                        if($color == $project->get_color()){
+                                            echo "<option style='background-color: #{$color}' selected>{$color}</option>";
+                                        }
+                                        else{
+                                            echo "<option style='background-color: #{$color}'>{$color}</option>";
+                                        }
+
+                                    }
+                                    ?>
+                                </select>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-success" id="choose-project-color-submit" type="button" data-project-id="<?= $project->get_id()?>">Submit</button>
+                                </span>
+                            </div>
+
+<!--                                <div class="input-group col-md-6">-->
+<!--                                    --><?php
+//                                    $inputArr = array("class"=>"form-control","id"=>"choose-project-color", "placeholder"=>"Click Here to Choose Color", "value"=>$project->get_color());
+//                                    echo form_input($inputArr);
+//                                    ?>
+<!--                                    <span class="input-group-btn">-->
+<!--                                        <button class="btn btn-success" id="choose-project-color-submit" type="button" data-project-id="--><?//= $project->get_id()?><!--">Submit</button>-->
+<!--                                    </span>-->
+<!--                                </div>-->
+
                         </div>
                     </div>
                 </div>
@@ -89,7 +125,12 @@
                             ?>
                         </div>
                     </div>
+                    <?php
+                    echo br();
+                    echo anchor($this->session->userdata('last_search_uri'), "Continue Searcing");
+                    ?>
                 </div>
+
             </div>
             <hr />
             <div class="row">

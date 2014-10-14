@@ -40,6 +40,9 @@ body {
 .left-margin-sm{
     margin-left:5px;
 }
+.clear-both{
+    clear: both;
+}
 
 .user-name{
     color:white;
@@ -216,4 +219,46 @@ body {
 #search-suggestions .item:hover{
     background-color:#d3d3d3;
     cursor: pointer;
+}
+
+.v-middle{
+    vertical-align: middle !important;
+}
+
+.square{
+    cursor: pointer;
+    opacity: 1;
+    -moz-transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+}
+
+
+.square:hover{
+    opacity: 0.9 !important;
+    -moz-transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+}
+
+
+.project-heading{
+    padding:10px;
+}
+
+
+.square .project-detail{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.square .project-detail a{
+    font-family: Lato;
+    font-size: 13pt;
+    font-weight: bold;
+    color: white;
+}
+
+.PMS-5473{
+    background-color: rgb(38,104,109);
 }

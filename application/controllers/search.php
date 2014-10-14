@@ -16,6 +16,7 @@ class Search extends CI_Controller {
             $queryStr .= rawurlencode(strtolower(trim($d))) . "/";
         }
         $queryStr = rtrim($queryStr,"/");
+        $this->session->set_userdata("last_search_uri", $path. "/" .$queryStr);
         redirect($path. "/" .$queryStr , "refresh");
     }
 }

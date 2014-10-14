@@ -9,14 +9,21 @@ class Ajax extends User_Controller{
     }
 
     public function create_project(){
+        header('Content-Type: application/json');
         $projectName = $this->input->post("name");
         $newProject = $this->MProject->quick_create($projectName);
         $newConnection = $this->MUserProject->make_connection($newProject);
+
+
         if(isset($newConnection) && $newConnection != NULL){
-            echo "SUCCESS:".$newProject->get_id();
+            $json_res = json_encode($newProject);
+            $decode = json_decode($json_res, true);
+            $decode['status'] = "success";
+            $json_res = json_encode($decode);
+            echo $json_res;
         }
         else{
-            echo "FAILED";
+            echo json_encode(array("status"=>"failed"));
         }
     }    
     
@@ -259,6 +266,92 @@ class Ajax extends User_Controller{
         }
     }
 
+    public function add_questionnaire_to_project(){
+        $this->load->model("User_model" , "MUser");
+        $this->load->model("User_questionnaire_model" , "MUQuestionnaire");
+
+        $data = $this->input->post();
+        $user = $this->MUser->get_user();
+
+        //first craete a new qn in the user_questionnaire table
+        $new_qn = new User_questionnaire_model(array(
+            'name' => "[COPY] ".$data['questionnaire_name'],
+            'created_by' => $user->get_user_id(),
+            'project_id' => $data['project_id']
+        ));
+
+        $newQnId = $new_qn->save();
+        $originalQnId = $data['questionnaire_id'];
+        $originalQn = new Questionnaire_model($originalQnId);
+        if($newQnId){
+            //copy all the questions from the question table that belog to this questionnaire in the uesr question table
+            $originalQuestions = $originalQn->get_questions();
+
+            $questionsInserted = $new_qn->insert_questions($originalQuestions);
+            if($questionsInserted == count($originalQuestions)){
+                echo "SUCCESS";
+            }
+        }
+        else{
+            echo "FAILED";
+        }
+
+    }
+
+    public function add_questions_to_questionnaire(){
+
+        $this->load->model("User_model" , "MUser");
+        $this->load->model("User_questionnaire_model" , "MUQuestionnaire");
+        $this->load->model("User_question_model" , "MUQuestion");
+
+        $data = $this->input->post();
+        $user = $this->MUser->get_user();
+
+        $questions = [];
+        foreach($data['questions'] as $question){
+            $questions[] = new User_question_model(array(
+                "content"=>$question['question_content'],
+                "questionnaire_id"=>$question['questionnaire_id'],
+                "question_id"=>$question['question_id'],
+                "created_by"=>$user->get_user_id()
+            ));
+        }
+
+        $qn = new User_questionnaire_model($data['questionnaire_id']);
+        $questionsInserted = $qn->insert_questions($questions);
+        if($questionsInserted == count($questions)){
+            $qn->updated();
+            echo "SUCCESS";
+        }
+        else{
+            echo "FAILED";
+        }
+    }
+
+    public function update_project_color(){
+        $data = $this->input->post();
+        if(!isset($data['project_id']) || !isset($data['color'])){
+            echo "FAILED";
+            return;
+        }
+
+        if(strlen($data['color']) > 6){
+            echo "FAILED";
+            return;
+        }
+
+        $project = new $this->MProject($data['project_id']);
+
+        $res = $project->set_project_color($data['color']);
+        if($res == 1){
+            echo "SUCCESS";
+            return;
+        }
+        else{
+            echo "FAILED";
+            return;
+        }
+    }
 
 }?>
 
